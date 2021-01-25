@@ -1,0 +1,24 @@
+2021-01-25 12:48:38.315 [main] INFO  IFrameTest - Starting Iframe test
+2021-01-25 12:48:38.322 [main] INFO  IFrameTest - Checking url's
+2021-01-25 12:48:58.454 [main] INFO  IFrameTest - Clear input
+2021-01-25 12:48:58.572 [main] INFO  IFrameTest - Input random text
+2021-01-25 12:48:58.731 [main] INFO  IFrameTest - Checking random text
+2021-01-25 12:48:58.780 [main] INFO  IFrameTest - Highlight whole text
+2021-01-25 12:48:58.871 [main] INFO  IFrameTest - Doing text BOLD
+2021-01-25 12:48:59.002 [main] INFO  IFrameTest - Checking if text is bold
+2021-01-25 12:50:39.804 [main] INFO  IFrameTest - Starting Iframe test
+2021-01-25 12:50:39.810 [main] INFO  IFrameTest - Checking url's
+2021-01-25 12:50:39.817 [main] INFO  IFrameTest - Clear input
+2021-01-25 12:50:59.977 [main] INFO  IFrameTest - Input random text
+2021-01-25 12:51:00.207 [main] INFO  IFrameTest - Checking random text
+2021-01-25 12:51:00.232 [main] INFO  IFrameTest - Highlight whole text
+2021-01-25 12:51:00.331 [main] INFO  IFrameTest - Doing text BOLD
+2021-01-25 12:51:00.489 [main] INFO  IFrameTest - Checking if text is bold
+2021-01-25 12:51:49.629 [main] INFO  IFrameTest - Starting Iframe test
+2021-01-25 12:51:49.635 [main] INFO  IFrameTest - Checking url's
+2021-01-25 12:51:49.641 [main] INFO  IFrameTest - Clear input
+2021-01-25 12:52:09.811 [main] INFO  IFrameTest - Input random text
+2021-01-25 12:52:09.998 [main] INFO  IFrameTest - Checking random text
+2021-01-25 12:52:10.044 [main] INFO  IFrameTest - Highlight whole text
+2021-01-25 12:52:10.146 [main] INFO  IFrameTest - Doing text BOLD
+2021-01-25 12:52:10.371 [main] INFO  IFrameTest - Checking if text is bold
