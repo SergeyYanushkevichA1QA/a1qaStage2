@@ -1,0 +1,196 @@
+2021-01-28 20:07:46 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 20:07:46 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 20:07:56 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 20:07:56 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 20:07:56 INFO  - Browser 'CHROME' ready...
+2021-01-28 20:07:56 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/javascript_alerts'
+2021-01-28 20:14:24 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 20:14:24 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 20:14:28 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 20:14:28 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 20:14:28 INFO  - Browser 'CHROME' ready...
+2021-01-28 20:14:29 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/javascript_alerts'
+2021-01-28 20:14:31 INFO  - Button 'Click for JS Alert' :: Clicking
+2021-01-28 20:16:09 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 20:16:09 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 20:16:12 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 20:16:12 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 20:16:12 INFO  - Browser 'CHROME' ready...
+2021-01-28 20:16:12 INFO  - Maximizing browser window
+2021-01-28 20:16:12 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/javascript_alerts'
+2021-01-28 20:16:15 INFO  - Waiting for page to load
+2021-01-28 20:16:15 INFO  - Button 'Click for JS Alert' :: Clicking
+2021-01-28 20:17:23 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 20:17:23 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 20:17:27 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 20:17:27 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 20:17:27 INFO  - Browser 'CHROME' ready...
+2021-01-28 20:17:28 INFO  - Maximizing browser window
+2021-01-28 20:17:28 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/javascript_alerts'
+2021-01-28 20:17:30 INFO  - Waiting for page to load
+2021-01-28 20:17:31 INFO  - Button 'Click for JS Alert' :: Clicking
+2021-01-28 20:18:11 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 20:18:11 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 20:18:13 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 20:18:13 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 20:18:13 INFO  - Browser 'CHROME' ready...
+2021-01-28 20:18:13 INFO  - Maximizing browser window
+2021-01-28 20:18:13 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/javascript_alerts'
+2021-01-28 20:18:18 INFO  - Waiting for page to load
+2021-01-28 20:18:18 INFO  - Button 'Click for JS Alert' :: Clicking
+2021-01-28 20:18:18 INFO  - Accepting browser alert
+2021-01-28 20:28:08 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 20:28:08 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 20:28:10 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 20:28:10 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 20:28:10 INFO  - Browser 'CHROME' ready...
+2021-01-28 20:28:10 INFO  - Maximizing browser window
+2021-01-28 20:28:10 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/javascript_alerts'
+2021-01-28 20:28:13 INFO  - Waiting for page to load
+2021-01-28 20:28:13 INFO  - Button 'Click for JS Alert' :: Clicking
+2021-01-28 20:28:14 INFO  - Accepting browser alert
+2021-01-28 20:28:14 INFO  - Button 'Click for JS Confirm' :: Clicking
+2021-01-28 20:28:14 INFO  - Accepting browser alert
+2021-01-28 20:28:14 INFO  - Button 'Click for JS Prompt' :: Clicking
+2021-01-28 20:28:14 INFO  - Accepting browser alert
+2021-01-28 20:29:06 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 20:29:06 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 20:29:11 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 20:29:11 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 20:29:11 INFO  - Browser 'CHROME' ready...
+2021-01-28 20:29:12 INFO  - Maximizing browser window
+2021-01-28 20:29:12 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/javascript_alerts'
+2021-01-28 20:29:14 INFO  - Waiting for page to load
+2021-01-28 20:29:16 INFO  - Button 'Click for JS Alert' :: Clicking
+2021-01-28 20:29:16 INFO  - Accepting browser alert
+2021-01-28 20:29:16 INFO  - Button 'Click for JS Confirm' :: Clicking
+2021-01-28 20:29:16 INFO  - Accepting browser alert
+2021-01-28 20:29:16 INFO  - Button 'Click for JS Prompt' :: Clicking
+2021-01-28 20:29:17 INFO  - Accepting browser alert
+2021-01-28 20:30:49 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 20:30:49 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 20:30:53 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 20:30:53 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 20:30:53 INFO  - Browser 'CHROME' ready...
+2021-01-28 20:30:54 INFO  - Maximizing browser window
+2021-01-28 20:30:54 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/javascript_alerts'
+2021-01-28 20:30:56 INFO  - Waiting for page to load
+2021-01-28 20:30:57 INFO  - Button 'Click for JS Alert' :: Clicking
+2021-01-28 20:30:57 INFO  - Accepting browser alert
+2021-01-28 20:30:57 INFO  - Text Field 'You successfuly clicked an alert' :: Getting attribute 'value'
+2021-01-28 20:30:57 INFO  - Text Field 'You successfuly clicked an alert' :: Value of attribute 'value': [null]
+2021-01-28 20:30:57 INFO  - Button 'Click for JS Confirm' :: Clicking
+2021-01-28 20:30:57 INFO  - Accepting browser alert
+2021-01-28 20:30:57 INFO  - Button 'Click for JS Prompt' :: Clicking
+2021-01-28 20:30:57 INFO  - Accepting browser alert
+2021-01-28 20:31:55 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 20:31:55 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 20:31:57 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 20:31:57 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 20:31:57 INFO  - Browser 'CHROME' ready...
+2021-01-28 20:31:57 INFO  - Maximizing browser window
+2021-01-28 20:31:57 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/javascript_alerts'
+2021-01-28 20:32:02 INFO  - Waiting for page to load
+2021-01-28 20:32:02 INFO  - Button 'Click for JS Alert' :: Clicking
+2021-01-28 20:32:02 INFO  - Accepting browser alert
+2021-01-28 20:32:02 INFO  - Text Field 'You successfuly clicked an alert' :: Getting text from element
+2021-01-28 20:32:02 INFO  - Text Field 'You successfuly clicked an alert' :: Element's text: [You successfuly clicked an alert]
+2021-01-28 20:32:02 INFO  - Button 'Click for JS Confirm' :: Clicking
+2021-01-28 20:32:02 INFO  - Accepting browser alert
+2021-01-28 20:32:02 INFO  - Button 'Click for JS Prompt' :: Clicking
+2021-01-28 20:32:02 INFO  - Accepting browser alert
+2021-01-28 20:43:02 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 20:43:02 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 20:43:04 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 20:43:04 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 20:43:04 INFO  - Browser 'CHROME' ready...
+2021-01-28 20:43:04 INFO  - Maximizing browser window
+2021-01-28 20:43:04 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/javascript_alerts'
+2021-01-28 20:43:07 INFO  - Waiting for page to load
+2021-01-28 20:43:07 INFO  - Button 'Click for JS Alert' :: Clicking
+2021-01-28 20:43:38 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 20:43:38 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 20:43:40 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 20:43:40 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 20:43:40 INFO  - Browser 'CHROME' ready...
+2021-01-28 20:43:40 INFO  - Maximizing browser window
+2021-01-28 20:43:40 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/javascript_alerts'
+2021-01-28 20:43:43 INFO  - Waiting for page to load
+2021-01-28 20:43:43 INFO  - Button 'Click for JS Alert' :: Clicking
+2021-01-28 20:43:43 INFO  - Accepting browser alert
+2021-01-28 20:43:43 INFO  - Text Field 'You successfuly clicked an alert' :: Getting text from element
+2021-01-28 20:43:43 INFO  - Text Field 'You successfuly clicked an alert' :: Element's text: [You successfuly clicked an alert]
+2021-01-28 20:43:43 INFO  - Button 'Click for JS Confirm' :: Clicking
+2021-01-28 20:43:44 INFO  - Accepting browser alert
+2021-01-28 20:43:44 INFO  - Text Field 'You successfuly clicked an alert' :: Getting text from element
+2021-01-28 20:43:44 INFO  - Text Field 'You successfuly clicked an alert' :: Element's text: [You clicked: Ok]
+2021-01-28 20:43:44 INFO  - Button 'Click for JS Prompt' :: Clicking
+2021-01-28 20:43:44 INFO  - Accepting browser alert
+2021-01-28 20:43:44 INFO  - Text Field 'You successfuly clicked an alert' :: Getting text from element
+2021-01-28 20:43:44 INFO  - Text Field 'You successfuly clicked an alert' :: Element's text: [You entered: ooKh4HK9ISBuYSJyqsieOo0iNfSJpt]
+2021-01-28 20:44:46 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 20:44:46 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 20:44:48 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 20:44:48 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 20:44:48 INFO  - Browser 'CHROME' ready...
+2021-01-28 20:44:48 INFO  - Maximizing browser window
+2021-01-28 20:44:48 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/javascript_alerts'
+2021-01-28 20:44:52 INFO  - Waiting for page to load
+2021-01-28 20:44:52 INFO  - Button 'JS alert button' :: Clicking
+2021-01-28 20:44:52 INFO  - Accepting browser alert
+2021-01-28 20:44:52 INFO  - Text Field 'You successfuly clicked an alert' :: Getting text from element
+2021-01-28 20:44:52 INFO  - Text Field 'You successfuly clicked an alert' :: Element's text: [You successfuly clicked an alert]
+2021-01-28 20:44:52 INFO  - Button 'JS confirm button' :: Clicking
+2021-01-28 20:44:53 INFO  - Accepting browser alert
+2021-01-28 20:44:53 INFO  - Text Field 'You successfuly clicked an alert' :: Getting text from element
+2021-01-28 20:44:53 INFO  - Text Field 'You successfuly clicked an alert' :: Element's text: [You clicked: Ok]
+2021-01-28 20:44:53 INFO  - Button 'JS prompt button' :: Clicking
+2021-01-28 20:44:53 INFO  - Accepting browser alert
+2021-01-28 20:44:53 INFO  - Text Field 'You successfuly clicked an alert' :: Getting text from element
+2021-01-28 20:44:53 INFO  - Text Field 'You successfuly clicked an alert' :: Element's text: [You entered: iA1T76Yv1OdlHIAuDLfNQqTsT0uHkC]
+2021-01-28 20:45:30 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 20:45:30 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 20:45:32 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 20:45:32 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 20:45:32 INFO  - Browser 'CHROME' ready...
+2021-01-28 20:45:32 INFO  - Maximizing browser window
+2021-01-28 20:45:32 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/javascript_alerts'
+2021-01-28 20:45:37 INFO  - Waiting for page to load
+2021-01-28 20:45:37 INFO  - Button 'JS alert button' :: Clicking
+2021-01-28 20:45:37 INFO  - Accepting browser alert
+2021-01-28 20:45:37 INFO  - Text Field 'You successfuly clicked an alert' :: Getting text from element
+2021-01-28 20:45:37 INFO  - Text Field 'You successfuly clicked an alert' :: Element's text: [You successfuly clicked an alert]
+2021-01-28 20:45:37 INFO  - Button 'JS confirm button' :: Clicking
+2021-01-28 20:45:37 INFO  - Accepting browser alert
+2021-01-28 20:45:37 INFO  - Text Field 'You successfuly clicked an alert' :: Getting text from element
+2021-01-28 20:45:37 INFO  - Text Field 'You successfuly clicked an alert' :: Element's text: [You clicked: Ok]
+2021-01-28 20:45:37 INFO  - Button 'JS prompt button' :: Clicking
+2021-01-28 20:45:38 INFO  - Accepting browser alert
+2021-01-28 20:45:38 INFO  - Text Field 'You successfuly clicked an alert' :: Getting text from element
+2021-01-28 20:45:38 INFO  - Text Field 'You successfuly clicked an alert' :: Element's text: [You entered: JanNQOEjBUketP0WgXITiT6HQz0bem]
