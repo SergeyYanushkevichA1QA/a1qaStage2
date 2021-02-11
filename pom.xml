@@ -43,6 +43,22 @@
             <version>4.12</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+        <groupId>com.github.aquality-automation</groupId>
+        <artifactId>aquality-selenium</artifactId>
+        <version>LATEST</version>
+    </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20160810</version>
+        </dependency>
     </dependencies>
 
 

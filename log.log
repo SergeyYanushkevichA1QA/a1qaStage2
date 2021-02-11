@@ -1,0 +1,596 @@
+2021-01-28 21:33:37 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 21:33:37 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 21:33:47 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 21:33:47 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 21:33:47 INFO  - Browser 'CHROME' ready...
+2021-01-28 21:33:48 INFO  - Maximizing browser window
+2021-01-28 21:33:48 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-01-28 21:33:51 INFO  - Waiting for page to load
+2021-01-28 21:33:52 INFO  - Getting current url
+2021-01-28 21:33:52 INFO  - Current url: [https://httpbin.org/basic-auth/user/passwd]
+2021-01-28 21:34:21 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 21:34:21 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 21:34:23 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 21:34:23 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 21:34:23 INFO  - Browser 'CHROME' ready...
+2021-01-28 21:34:23 INFO  - Maximizing browser window
+2021-01-28 21:34:23 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-01-28 21:34:27 INFO  - Waiting for page to load
+2021-01-28 21:34:27 INFO  - Getting current url
+2021-01-28 21:34:27 INFO  - Current url: [https://httpbin.org/basic-auth/user/passwd]
+2021-01-28 23:13:47 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 23:13:47 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 23:14:02 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 23:14:02 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 23:14:02 INFO  - Browser 'CHROME' ready...
+2021-01-28 23:14:02 INFO  - Maximizing browser window
+2021-01-28 23:14:03 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-01-28 23:14:04 INFO  - Waiting for page to load
+2021-01-28 23:14:05 INFO  - Getting current url
+2021-01-28 23:14:05 INFO  - Current url: [https://httpbin.org/basic-auth/user/passwd]
+2021-01-29 13:55:00 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-29 13:55:00 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-29 13:55:16 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-29 13:55:16 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-29 13:55:16 INFO  - Browser 'CHROME' ready...
+2021-01-29 13:55:16 INFO  - Maximizing browser window
+2021-01-29 13:55:16 INFO  - Waiting for page to load
+2021-01-29 13:55:17 INFO  - Navigate to url - 'https://user:passwd@bin.org/basic-auth/user/passwd'
+2021-01-29 13:55:56 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-29 13:55:56 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-29 13:55:58 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-29 13:55:58 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-29 13:55:58 INFO  - Browser 'CHROME' ready...
+2021-01-29 13:55:58 INFO  - Maximizing browser window
+2021-01-29 13:55:58 INFO  - Waiting for page to load
+2021-01-29 13:55:58 INFO  - Navigate to url - 'https://user:passwd@httpbin.org/basic-auth/user/passwd'
+2021-01-29 13:56:03 INFO  - Getting current url
+2021-01-29 13:56:03 INFO  - Current url: [https://user:passwd@httpbin.org/basic-auth/user/passwd]
+2021-01-29 13:56:25 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-29 13:56:25 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-29 13:56:27 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-29 13:56:27 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-29 13:56:27 INFO  - Browser 'CHROME' ready...
+2021-01-29 13:56:27 INFO  - Maximizing browser window
+2021-01-29 13:56:28 INFO  - Waiting for page to load
+2021-01-29 13:56:28 INFO  - Navigate to url - 'https://user:passwd@httpbin.org/basic-auth/user/passwd'
+2021-01-29 13:58:13 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-29 13:58:14 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-29 13:58:17 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-29 13:58:17 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-29 13:58:17 INFO  - Browser 'CHROME' ready...
+2021-01-29 13:58:17 INFO  - Maximizing browser window
+2021-01-29 13:58:17 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-01-29 13:58:22 INFO  - Waiting for page to load
+2021-01-29 13:58:22 INFO  - Navigate to url - 'https://user:passwd@httpbin.org/basic-auth/user/passwd'
+2021-01-29 13:59:47 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-29 13:59:47 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-29 13:59:49 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-29 13:59:49 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-29 13:59:49 INFO  - Browser 'CHROME' ready...
+2021-01-29 13:59:49 INFO  - Maximizing browser window
+2021-01-29 13:59:49 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-01-29 13:59:50 INFO  - Waiting for page to load
+2021-01-29 14:00:22 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-29 14:00:22 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-29 14:00:25 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-29 14:00:25 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-29 14:00:25 INFO  - Browser 'CHROME' ready...
+2021-01-29 14:00:25 INFO  - Maximizing browser window
+2021-01-29 14:00:25 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-01-29 14:00:28 INFO  - Waiting for page to load
+2021-01-29 14:04:33 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-29 14:04:33 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-29 14:04:43 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-29 14:04:43 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-29 14:04:43 INFO  - Browser 'CHROME' ready...
+2021-01-29 14:04:44 INFO  - Maximizing browser window
+2021-01-29 14:04:44 INFO  - Navigate to url - 'httpbin.org/basic-auth/user/passwd'
+2021-01-29 14:05:10 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-29 14:05:10 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-29 14:05:12 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-29 14:05:12 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-29 14:05:12 INFO  - Browser 'CHROME' ready...
+2021-01-29 14:05:12 INFO  - Maximizing browser window
+2021-01-29 14:05:12 INFO  - Navigate to url - 'httpbin.org/basic-auth/user/passwd'
+2021-01-29 14:05:59 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-29 14:05:59 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-29 14:06:02 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-29 14:06:02 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-29 14:06:02 INFO  - Browser 'CHROME' ready...
+2021-01-29 14:06:02 INFO  - Maximizing browser window
+2021-01-29 14:06:02 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-01-29 14:06:06 INFO  - Waiting for page to load
+2021-01-29 14:06:06 INFO  - Navigate to url - 'https://user:passwd@https://httpbin.org/basic-auth/user/passwd'
+2021-01-29 14:08:04 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-29 14:08:04 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-29 14:08:08 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-29 14:08:08 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-29 14:08:08 INFO  - Browser 'CHROME' ready...
+2021-01-29 14:08:08 INFO  - Maximizing browser window
+2021-01-29 14:08:08 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-01-29 14:08:10 INFO  - Waiting for page to load
+2021-01-29 14:08:11 INFO  - Navigate to url - 'https://user:passwd@false'
+2021-01-29 14:09:58 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-29 14:09:58 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-29 14:10:02 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-29 14:10:02 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-29 14:10:02 INFO  - Browser 'CHROME' ready...
+2021-01-29 14:10:02 INFO  - Maximizing browser window
+2021-01-29 14:10:03 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-01-29 14:10:05 INFO  - Waiting for page to load
+2021-01-29 14:10:06 INFO  - Navigate to url - 'https://user:passwd@httpbin.org/basic-auth/user/passwd'
+2021-02-11 19:38:35 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-02-11 19:38:35 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-02-11 19:38:37 DEBUG - Set '60' timeout in seconds for loading of pages
+2021-02-11 19:38:37 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-02-11 19:38:37 INFO  - Browser 'CHROME' ready...
+2021-02-11 19:38:37 INFO  - Maximizing browser window
+2021-02-11 19:38:38 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-02-11 19:38:39 INFO  - Waiting for page to load
+2021-02-11 19:38:39 INFO  - Getting current url
+2021-02-11 19:38:39 INFO  - Current url: [https://httpbin.org/basic-auth/user/passwd]
+2021-02-11 19:39:16 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-02-11 19:39:16 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-02-11 19:39:19 DEBUG - Set '60' timeout in seconds for loading of pages
+2021-02-11 19:39:19 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-02-11 19:39:19 INFO  - Browser 'CHROME' ready...
+2021-02-11 19:39:19 INFO  - Maximizing browser window
+2021-02-11 19:39:19 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-02-11 19:39:20 INFO  - Waiting for page to load
+2021-02-11 19:39:20 INFO  - Getting current url
+2021-02-11 19:39:20 INFO  - Current url: [https://httpbin.org/basic-auth/user/passwd]
+2021-02-11 19:39:20 INFO  - Login with username user and password passwd
+2021-02-11 19:39:20 INFO  - Navigate to url - 'https://user:passwd@httpbin.org/basic-auth/user/passwd'
+2021-02-11 19:45:17 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-02-11 19:45:17 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-02-11 19:45:19 DEBUG - Set '60' timeout in seconds for loading of pages
+2021-02-11 19:45:19 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-02-11 19:45:19 INFO  - Browser 'CHROME' ready...
+2021-02-11 19:45:19 INFO  - Maximizing browser window
+2021-02-11 19:45:19 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-02-11 19:45:23 INFO  - Waiting for page to load
+2021-02-11 19:45:23 INFO  - Getting current url
+2021-02-11 19:45:23 INFO  - Current url: [https://httpbin.org/basic-auth/user/passwd]
+2021-02-11 19:45:23 INFO  - Login with username user and password passwd
+2021-02-11 19:45:23 INFO  - Navigate to url - 'https://user:passwd@httpbin.org/basic-auth/user/passwd'
+2021-02-11 19:45:24 DEBUG - CookieSpec selected: default
+2021-02-11 19:45:24 DEBUG - Auth cache not set in the context
+2021-02-11 19:45:24 DEBUG - Connection request: [route: {s}->https://httpbin.org:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2021-02-11 19:45:24 DEBUG - Connection leased: [id: 0][route: {s}->https://httpbin.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-02-11 19:45:24 DEBUG - Opening connection {s}->https://httpbin.org:443
+2021-02-11 19:45:24 DEBUG - Connecting to httpbin.org/18.214.80.1:443
+2021-02-11 19:45:24 DEBUG - Connecting socket to httpbin.org/18.214.80.1:443 with timeout 0
+2021-02-11 19:45:24 DEBUG - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2021-02-11 19:45:24 DEBUG - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2021-02-11 19:45:24 DEBUG - Starting handshake
+2021-02-11 19:45:25 DEBUG - Secure session established
+2021-02-11 19:45:25 DEBUG -  negotiated protocol: TLSv1.2
+2021-02-11 19:45:25 DEBUG -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2021-02-11 19:45:25 DEBUG -  peer principal: CN=httpbin.org
+2021-02-11 19:45:25 DEBUG -  peer alternative names: [httpbin.org, *.httpbin.org]
+2021-02-11 19:45:25 DEBUG -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+2021-02-11 19:45:25 DEBUG - Connection established 192.168.43.141:62430<->18.214.80.1:443
+2021-02-11 19:45:25 DEBUG - Executing request GET /basic-auth/user/passwd HTTP/1.1
+2021-02-11 19:45:25 DEBUG - Target auth state: UNCHALLENGED
+2021-02-11 19:45:25 DEBUG - Proxy auth state: UNCHALLENGED
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 >> GET /basic-auth/user/passwd HTTP/1.1
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 >> Host: httpbin.org
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 >> Connection: Keep-Alive
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_191)
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 >> "GET /basic-auth/user/passwd HTTP/1.1[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 >> "Host: httpbin.org[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_191)[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 >> "[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << "HTTP/1.1 401 UNAUTHORIZED[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << "Date: Thu, 11 Feb 2021 16:45:23 GMT[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << "Content-Length: 0[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << "Server: gunicorn/19.9.0[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << "WWW-Authenticate: Basic realm="Fake Realm"[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << "[\r][\n]"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << HTTP/1.1 401 UNAUTHORIZED
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << Date: Thu, 11 Feb 2021 16:45:23 GMT
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << Content-Length: 0
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << Connection: keep-alive
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << Server: gunicorn/19.9.0
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << WWW-Authenticate: Basic realm="Fake Realm"
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << Access-Control-Allow-Origin: *
+2021-02-11 19:45:25 DEBUG - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2021-02-11 19:45:25 DEBUG - Connection can be kept alive indefinitely
+2021-02-11 19:45:25 DEBUG - Authentication required
+2021-02-11 19:45:25 DEBUG - httpbin.org:443 requested authentication
+2021-02-11 19:45:25 DEBUG - Authentication schemes in the order of preference: [Negotiate, Kerberos, NTLM, Digest, Basic]
+2021-02-11 19:45:25 DEBUG - Challenge for Negotiate authentication scheme not available
+2021-02-11 19:45:25 DEBUG - Challenge for Kerberos authentication scheme not available
+2021-02-11 19:45:25 DEBUG - Challenge for NTLM authentication scheme not available
+2021-02-11 19:45:25 DEBUG - Challenge for Digest authentication scheme not available
+2021-02-11 19:45:25 DEBUG - Connection [id: 0][route: {s}->https://httpbin.org:443] can be kept alive indefinitely
+2021-02-11 19:45:25 DEBUG - Connection released: [id: 0][route: {s}->https://httpbin.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-02-11 19:45:25 INFO  - 
+2021-02-11 19:47:09 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-02-11 19:47:09 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-02-11 19:47:11 DEBUG - Set '60' timeout in seconds for loading of pages
+2021-02-11 19:47:11 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-02-11 19:47:11 INFO  - Browser 'CHROME' ready...
+2021-02-11 19:47:11 INFO  - Maximizing browser window
+2021-02-11 19:47:12 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-02-11 19:47:13 INFO  - Waiting for page to load
+2021-02-11 19:47:13 INFO  - Getting current url
+2021-02-11 19:47:13 INFO  - Current url: [https://httpbin.org/basic-auth/user/passwd]
+2021-02-11 19:47:13 INFO  - Login with username user and password passwd
+2021-02-11 19:47:13 INFO  - Navigate to url - 'https://user:passwd@httpbin.org/basic-auth/user/passwd'
+2021-02-11 19:47:13 DEBUG - CookieSpec selected: default
+2021-02-11 19:47:13 DEBUG - Auth cache not set in the context
+2021-02-11 19:47:13 DEBUG - Connection request: [route: {s}->https://httpbin.org:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2021-02-11 19:47:13 DEBUG - Connection leased: [id: 0][route: {s}->https://httpbin.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-02-11 19:47:13 DEBUG - Opening connection {s}->https://httpbin.org:443
+2021-02-11 19:47:13 DEBUG - Connecting to httpbin.org/52.2.51.61:443
+2021-02-11 19:47:13 DEBUG - Connecting socket to httpbin.org/52.2.51.61:443 with timeout 0
+2021-02-11 19:47:14 DEBUG - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2021-02-11 19:47:14 DEBUG - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2021-02-11 19:47:14 DEBUG - Starting handshake
+2021-02-11 19:47:14 DEBUG - Secure session established
+2021-02-11 19:47:14 DEBUG -  negotiated protocol: TLSv1.2
+2021-02-11 19:47:14 DEBUG -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2021-02-11 19:47:14 DEBUG -  peer principal: CN=httpbin.org
+2021-02-11 19:47:14 DEBUG -  peer alternative names: [httpbin.org, *.httpbin.org]
+2021-02-11 19:47:14 DEBUG -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+2021-02-11 19:47:14 DEBUG - Connection established 192.168.43.141:62473<->52.2.51.61:443
+2021-02-11 19:47:14 DEBUG - Executing request GET /basic-auth/user/passwd HTTP/1.1
+2021-02-11 19:47:14 DEBUG - Target auth state: UNCHALLENGED
+2021-02-11 19:47:14 DEBUG - Proxy auth state: UNCHALLENGED
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> GET /basic-auth/user/passwd HTTP/1.1
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> Host: httpbin.org
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> Connection: Keep-Alive
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_191)
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> "GET /basic-auth/user/passwd HTTP/1.1[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> "Host: httpbin.org[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_191)[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> "[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << "HTTP/1.1 401 UNAUTHORIZED[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << "Date: Thu, 11 Feb 2021 16:47:12 GMT[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << "Content-Length: 0[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << "Server: gunicorn/19.9.0[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << "WWW-Authenticate: Basic realm="Fake Realm"[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << "[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << HTTP/1.1 401 UNAUTHORIZED
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << Date: Thu, 11 Feb 2021 16:47:12 GMT
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << Content-Length: 0
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << Connection: keep-alive
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << Server: gunicorn/19.9.0
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << WWW-Authenticate: Basic realm="Fake Realm"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << Access-Control-Allow-Origin: *
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2021-02-11 19:47:14 DEBUG - Connection can be kept alive indefinitely
+2021-02-11 19:47:14 DEBUG - Authentication required
+2021-02-11 19:47:14 DEBUG - httpbin.org:443 requested authentication
+2021-02-11 19:47:14 DEBUG - Authentication schemes in the order of preference: [Negotiate, Kerberos, NTLM, Digest, Basic]
+2021-02-11 19:47:14 DEBUG - Challenge for Negotiate authentication scheme not available
+2021-02-11 19:47:14 DEBUG - Challenge for Kerberos authentication scheme not available
+2021-02-11 19:47:14 DEBUG - Challenge for NTLM authentication scheme not available
+2021-02-11 19:47:14 DEBUG - Challenge for Digest authentication scheme not available
+2021-02-11 19:47:14 DEBUG - Selected authentication options: [BASIC [complete=true]]
+2021-02-11 19:47:14 DEBUG - Executing request GET /basic-auth/user/passwd HTTP/1.1
+2021-02-11 19:47:14 DEBUG - Target auth state: CHALLENGED
+2021-02-11 19:47:14 DEBUG - Generating response to an authentication challenge using basic scheme
+2021-02-11 19:47:14 DEBUG - Proxy auth state: UNCHALLENGED
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> GET /basic-auth/user/passwd HTTP/1.1
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> Host: httpbin.org
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> Connection: Keep-Alive
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_191)
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> Authorization: Basic dXNlcjpwYXNzd2Q=
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> "GET /basic-auth/user/passwd HTTP/1.1[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> "Host: httpbin.org[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_191)[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> "Authorization: Basic dXNlcjpwYXNzd2Q=[\r][\n]"
+2021-02-11 19:47:14 DEBUG - http-outgoing-0 >> "[\r][\n]"
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << "Date: Thu, 11 Feb 2021 16:47:12 GMT[\r][\n]"
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << "Content-Length: 47[\r][\n]"
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << "Server: gunicorn/19.9.0[\r][\n]"
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << "[\r][\n]"
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << "{[\n]"
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << "  "authenticated": true, [\n]"
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << "  "user": "user"[\n]"
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << "}[\n]"
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << HTTP/1.1 200 OK
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << Date: Thu, 11 Feb 2021 16:47:12 GMT
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << Content-Type: application/json
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << Content-Length: 47
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << Connection: keep-alive
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << Server: gunicorn/19.9.0
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << Access-Control-Allow-Origin: *
+2021-02-11 19:47:15 DEBUG - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2021-02-11 19:47:15 DEBUG - Connection can be kept alive indefinitely
+2021-02-11 19:47:15 DEBUG - Authentication succeeded
+2021-02-11 19:47:15 DEBUG - Caching 'basic' auth scheme for https://httpbin.org:443
+2021-02-11 19:47:15 DEBUG - Connection [id: 0][route: {s}->https://httpbin.org:443] can be kept alive indefinitely
+2021-02-11 19:47:15 DEBUG - Connection released: [id: 0][route: {s}->https://httpbin.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-02-11 19:47:15 INFO  - {
+  "authenticated": true, 
+  "user": "user"
+}
+
+2021-02-11 19:54:42 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-02-11 19:54:42 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-02-11 19:54:45 DEBUG - Set '60' timeout in seconds for loading of pages
+2021-02-11 19:54:45 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-02-11 19:54:45 INFO  - Browser 'CHROME' ready...
+2021-02-11 19:54:45 INFO  - Maximizing browser window
+2021-02-11 19:54:45 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-02-11 19:54:46 INFO  - Waiting for page to load
+2021-02-11 19:54:46 INFO  - Getting current url
+2021-02-11 19:54:46 INFO  - Current url: [https://httpbin.org/basic-auth/user/passwd]
+2021-02-11 19:54:46 INFO  - Login with username user and password passwd
+2021-02-11 19:54:46 INFO  - Navigate to url - 'https://user:passwd@httpbin.org/basic-auth/user/passwd'
+2021-02-11 19:54:47 DEBUG - CookieSpec selected: default
+2021-02-11 19:54:47 DEBUG - Auth cache not set in the context
+2021-02-11 19:54:47 DEBUG - Connection request: [route: {s}->https://httpbin.org:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2021-02-11 19:54:47 DEBUG - Connection leased: [id: 0][route: {s}->https://httpbin.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-02-11 19:54:47 DEBUG - Opening connection {s}->https://httpbin.org:443
+2021-02-11 19:54:47 DEBUG - Connecting to httpbin.org/52.2.51.61:443
+2021-02-11 19:54:47 DEBUG - Connecting socket to httpbin.org/52.2.51.61:443 with timeout 0
+2021-02-11 19:54:47 DEBUG - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2021-02-11 19:54:47 DEBUG - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2021-02-11 19:54:47 DEBUG - Starting handshake
+2021-02-11 19:54:47 DEBUG - Secure session established
+2021-02-11 19:54:47 DEBUG -  negotiated protocol: TLSv1.2
+2021-02-11 19:54:47 DEBUG -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2021-02-11 19:54:47 DEBUG -  peer principal: CN=httpbin.org
+2021-02-11 19:54:47 DEBUG -  peer alternative names: [httpbin.org, *.httpbin.org]
+2021-02-11 19:54:47 DEBUG -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+2021-02-11 19:54:47 DEBUG - Connection established 192.168.43.141:62558<->52.2.51.61:443
+2021-02-11 19:54:47 DEBUG - Executing request GET /basic-auth/user/passwd HTTP/1.1
+2021-02-11 19:54:47 DEBUG - Target auth state: UNCHALLENGED
+2021-02-11 19:54:47 DEBUG - Proxy auth state: UNCHALLENGED
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> GET /basic-auth/user/passwd HTTP/1.1
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> Host: httpbin.org
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> Connection: Keep-Alive
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_191)
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> "GET /basic-auth/user/passwd HTTP/1.1[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> "Host: httpbin.org[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_191)[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> "[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << "HTTP/1.1 401 UNAUTHORIZED[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << "Date: Thu, 11 Feb 2021 16:54:45 GMT[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << "Content-Length: 0[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << "Server: gunicorn/19.9.0[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << "WWW-Authenticate: Basic realm="Fake Realm"[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << "[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << HTTP/1.1 401 UNAUTHORIZED
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << Date: Thu, 11 Feb 2021 16:54:45 GMT
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << Content-Length: 0
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << Connection: keep-alive
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << Server: gunicorn/19.9.0
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << WWW-Authenticate: Basic realm="Fake Realm"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << Access-Control-Allow-Origin: *
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2021-02-11 19:54:47 DEBUG - Connection can be kept alive indefinitely
+2021-02-11 19:54:47 DEBUG - Authentication required
+2021-02-11 19:54:47 DEBUG - httpbin.org:443 requested authentication
+2021-02-11 19:54:47 DEBUG - Authentication schemes in the order of preference: [Negotiate, Kerberos, NTLM, Digest, Basic]
+2021-02-11 19:54:47 DEBUG - Challenge for Negotiate authentication scheme not available
+2021-02-11 19:54:47 DEBUG - Challenge for Kerberos authentication scheme not available
+2021-02-11 19:54:47 DEBUG - Challenge for NTLM authentication scheme not available
+2021-02-11 19:54:47 DEBUG - Challenge for Digest authentication scheme not available
+2021-02-11 19:54:47 DEBUG - Selected authentication options: [BASIC [complete=true]]
+2021-02-11 19:54:47 DEBUG - Executing request GET /basic-auth/user/passwd HTTP/1.1
+2021-02-11 19:54:47 DEBUG - Target auth state: CHALLENGED
+2021-02-11 19:54:47 DEBUG - Generating response to an authentication challenge using basic scheme
+2021-02-11 19:54:47 DEBUG - Proxy auth state: UNCHALLENGED
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> GET /basic-auth/user/passwd HTTP/1.1
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> Host: httpbin.org
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> Connection: Keep-Alive
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_191)
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> Authorization: Basic dXNlcjpwYXNzd2Q=
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> "GET /basic-auth/user/passwd HTTP/1.1[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> "Host: httpbin.org[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_191)[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> "Authorization: Basic dXNlcjpwYXNzd2Q=[\r][\n]"
+2021-02-11 19:54:47 DEBUG - http-outgoing-0 >> "[\r][\n]"
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << "Date: Thu, 11 Feb 2021 16:54:45 GMT[\r][\n]"
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << "Content-Length: 47[\r][\n]"
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << "Server: gunicorn/19.9.0[\r][\n]"
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << "[\r][\n]"
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << "{[\n]"
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << "  "authenticated": true, [\n]"
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << "  "user": "user"[\n]"
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << "}[\n]"
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << HTTP/1.1 200 OK
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << Date: Thu, 11 Feb 2021 16:54:45 GMT
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << Content-Type: application/json
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << Content-Length: 47
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << Connection: keep-alive
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << Server: gunicorn/19.9.0
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << Access-Control-Allow-Origin: *
+2021-02-11 19:54:48 DEBUG - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2021-02-11 19:54:48 DEBUG - Connection can be kept alive indefinitely
+2021-02-11 19:54:48 DEBUG - Authentication succeeded
+2021-02-11 19:54:48 DEBUG - Caching 'basic' auth scheme for https://httpbin.org:443
+2021-02-11 19:54:48 DEBUG - Connection [id: 0][route: {s}->https://httpbin.org:443] can be kept alive indefinitely
+2021-02-11 19:54:48 DEBUG - Connection released: [id: 0][route: {s}->https://httpbin.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-02-11 19:55:42 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-02-11 19:55:42 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-02-11 19:55:44 DEBUG - Set '60' timeout in seconds for loading of pages
+2021-02-11 19:55:44 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-02-11 19:55:44 INFO  - Browser 'CHROME' ready...
+2021-02-11 19:55:45 INFO  - Maximizing browser window
+2021-02-11 19:55:45 INFO  - Navigate to url - 'https://httpbin.org/basic-auth/user/passwd'
+2021-02-11 19:55:46 INFO  - Waiting for page to load
+2021-02-11 19:55:46 INFO  - Getting current url
+2021-02-11 19:55:46 INFO  - Current url: [https://httpbin.org/basic-auth/user/passwd]
+2021-02-11 19:55:46 INFO  - Login with username user and password passwd
+2021-02-11 19:55:46 INFO  - Navigate to url - 'https://user:passwd@httpbin.org/basic-auth/user/passwd'
+2021-02-11 19:55:47 DEBUG - CookieSpec selected: default
+2021-02-11 19:55:47 DEBUG - Auth cache not set in the context
+2021-02-11 19:55:47 DEBUG - Connection request: [route: {s}->https://httpbin.org:443][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2021-02-11 19:55:47 DEBUG - Connection leased: [id: 0][route: {s}->https://httpbin.org:443][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2021-02-11 19:55:47 DEBUG - Opening connection {s}->https://httpbin.org:443
+2021-02-11 19:55:47 DEBUG - Connecting to httpbin.org/18.214.80.1:443
+2021-02-11 19:55:47 DEBUG - Connecting socket to httpbin.org/18.214.80.1:443 with timeout 0
+2021-02-11 19:55:47 DEBUG - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2021-02-11 19:55:47 DEBUG - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2021-02-11 19:55:47 DEBUG - Starting handshake
+2021-02-11 19:55:48 DEBUG - Secure session established
+2021-02-11 19:55:48 DEBUG -  negotiated protocol: TLSv1.2
+2021-02-11 19:55:48 DEBUG -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2021-02-11 19:55:48 DEBUG -  peer principal: CN=httpbin.org
+2021-02-11 19:55:48 DEBUG -  peer alternative names: [httpbin.org, *.httpbin.org]
+2021-02-11 19:55:48 DEBUG -  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+2021-02-11 19:55:48 DEBUG - Connection established 192.168.43.141:62589<->18.214.80.1:443
+2021-02-11 19:55:48 DEBUG - Executing request GET /basic-auth/user/passwd HTTP/1.1
+2021-02-11 19:55:48 DEBUG - Target auth state: UNCHALLENGED
+2021-02-11 19:55:48 DEBUG - Proxy auth state: UNCHALLENGED
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> GET /basic-auth/user/passwd HTTP/1.1
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> Host: httpbin.org
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> Connection: Keep-Alive
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_191)
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> "GET /basic-auth/user/passwd HTTP/1.1[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> "Host: httpbin.org[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_191)[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> "[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << "HTTP/1.1 401 UNAUTHORIZED[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << "Date: Thu, 11 Feb 2021 16:55:45 GMT[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << "Content-Length: 0[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << "Server: gunicorn/19.9.0[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << "WWW-Authenticate: Basic realm="Fake Realm"[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << "[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << HTTP/1.1 401 UNAUTHORIZED
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << Date: Thu, 11 Feb 2021 16:55:45 GMT
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << Content-Length: 0
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << Connection: keep-alive
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << Server: gunicorn/19.9.0
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << WWW-Authenticate: Basic realm="Fake Realm"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << Access-Control-Allow-Origin: *
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2021-02-11 19:55:48 DEBUG - Connection can be kept alive indefinitely
+2021-02-11 19:55:48 DEBUG - Authentication required
+2021-02-11 19:55:48 DEBUG - httpbin.org:443 requested authentication
+2021-02-11 19:55:48 DEBUG - Authentication schemes in the order of preference: [Negotiate, Kerberos, NTLM, Digest, Basic]
+2021-02-11 19:55:48 DEBUG - Challenge for Negotiate authentication scheme not available
+2021-02-11 19:55:48 DEBUG - Challenge for Kerberos authentication scheme not available
+2021-02-11 19:55:48 DEBUG - Challenge for NTLM authentication scheme not available
+2021-02-11 19:55:48 DEBUG - Challenge for Digest authentication scheme not available
+2021-02-11 19:55:48 DEBUG - Selected authentication options: [BASIC [complete=true]]
+2021-02-11 19:55:48 DEBUG - Executing request GET /basic-auth/user/passwd HTTP/1.1
+2021-02-11 19:55:48 DEBUG - Target auth state: CHALLENGED
+2021-02-11 19:55:48 DEBUG - Generating response to an authentication challenge using basic scheme
+2021-02-11 19:55:48 DEBUG - Proxy auth state: UNCHALLENGED
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> GET /basic-auth/user/passwd HTTP/1.1
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> Host: httpbin.org
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> Connection: Keep-Alive
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_191)
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> Authorization: Basic dXNlcjpwYXNzd2Q=
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> "GET /basic-auth/user/passwd HTTP/1.1[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> "Host: httpbin.org[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_191)[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> "Authorization: Basic dXNlcjpwYXNzd2Q=[\r][\n]"
+2021-02-11 19:55:48 DEBUG - http-outgoing-0 >> "[\r][\n]"
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << "Date: Thu, 11 Feb 2021 16:55:46 GMT[\r][\n]"
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << "Content-Length: 47[\r][\n]"
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << "Server: gunicorn/19.9.0[\r][\n]"
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << "[\r][\n]"
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << "{[\n]"
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << "  "authenticated": true, [\n]"
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << "  "user": "user"[\n]"
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << "}[\n]"
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << HTTP/1.1 200 OK
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << Date: Thu, 11 Feb 2021 16:55:46 GMT
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << Content-Type: application/json
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << Content-Length: 47
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << Connection: keep-alive
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << Server: gunicorn/19.9.0
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << Access-Control-Allow-Origin: *
+2021-02-11 19:55:49 DEBUG - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2021-02-11 19:55:49 DEBUG - Connection can be kept alive indefinitely
+2021-02-11 19:55:49 DEBUG - Authentication succeeded
+2021-02-11 19:55:49 DEBUG - Caching 'basic' auth scheme for https://httpbin.org:443
+2021-02-11 19:55:49 DEBUG - Connection [id: 0][route: {s}->https://httpbin.org:443] can be kept alive indefinitely
+2021-02-11 19:55:49 DEBUG - Connection released: [id: 0][route: {s}->https://httpbin.org:443][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
