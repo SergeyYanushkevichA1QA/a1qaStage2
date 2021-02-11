@@ -44,7 +44,7 @@ public class CookieTest {
     }
 
     @AfterClass
-    public static void tearDown() {
-
+    public void tearDown() {
+        browser.quit();
     }
 }
