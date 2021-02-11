@@ -6,7 +6,6 @@ import aquality.selenium.browser.Browser;
 import aquality.selenium.elements.interfaces.IButton;
 import aquality.selenium.elements.interfaces.IElementFactory;
 import aquality.selenium.elements.interfaces.ITextBox;
-import by.a1qa.service.ConfProperties;
 import by.a1qa.service.StringGenerator;
 import org.openqa.selenium.By;
 
@@ -18,12 +17,9 @@ public class MainPage {
     private IButton jsAllertButton = elementFactory.getButton(By.xpath("//button[@onclick='jsAlert()']"), "JS alert button");
     private IButton jsConfirmButton = elementFactory.getButton(By.xpath("//button[@onclick='jsConfirm()']"), "JS confirm button");
     private IButton jsPromptButton = elementFactory.getButton(By.xpath("//button[@onclick='jsPrompt()']"), "JS prompt button");
-    private ITextBox resultText = elementFactory.getTextBox(By.xpath("//p[@id='result']"), ConfProperties.getProperty("jsAlertResultText"));
+    private ITextBox resultText = elementFactory.getTextBox(By.xpath("//p[@id='result']"), "Result Text");
 
     public MainPage(Browser browser) {
-        browser.maximize();
-        browser.goTo(ConfProperties.getProperty("mainpage"));
-        browser.waitForPageToLoad();
         this.browser = browser;
     }
 
@@ -61,7 +57,4 @@ public class MainPage {
         return randomString;
     }
 
-    public void driverDown() {
-        browser.getDriver().quit();
-    }
 }
