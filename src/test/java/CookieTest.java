@@ -1,7 +1,8 @@
 import aquality.selenium.browser.AqualityServices;
 import aquality.selenium.browser.Browser;
+import aquality.selenium.core.utilities.ISettingsFile;
+import aquality.selenium.core.utilities.JsonSettingsFile;
 import by.a1qa.entity.MainPage;
-import by.a1qa.service.ConfProperties;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -10,30 +11,40 @@ import org.testng.annotations.Test;
 public class CookieTest {
     private Browser browser = AqualityServices.getBrowser();
     public static MainPage mainPage;
+    private static ISettingsFile environment = new JsonSettingsFile("settings.json");
+    private static String url = environment.getValue("/testdata/url").toString();
 
     @BeforeClass
     public void setup() {
+        browser.maximize();
+        browser.goTo(url);
+        browser.waitForPageToLoad();
         mainPage = new MainPage(browser);
     }
 
     @Test
     public void cookieTest() {
-        Assert.assertEquals(mainPage.getCurrentUrl(), ConfProperties.getProperty("mainpage"));
-        mainPage.cookieManager.addCookieByKeyandName("example_key_1","example_value_1");
-        mainPage.cookieManager.addCookieByKeyandName("example_key_2","example_value_2");
-        mainPage.cookieManager.addCookieByKeyandName("example_key_3","example_value_3");
-        mainPage.cookieManager.getAllCokies();
-        mainPage.cookieManager.deleteCookieByKey("example_key_1");
-        Assert.assertTrue(mainPage.cookieManager.isDeletedCookie("example_key_1"), "Cookie was deleted");
-        mainPage.cookieManager.changeCookieValue("example_key_3",  "example_value_300");
-        mainPage.cookieManager.getAllCokies();
-        mainPage.cookieManager.deleteAllCookies();
-        Assert.assertTrue(mainPage.cookieManager.isCookiesEmpty(), "Cookie is empty");
-        mainPage.cookieManager.getAllCokies();
+        Assert.assertEquals(mainPage.getCurrentUrl(), url);
+        mainPage.addCookieByKeyandName(environment.getValue("/testdata/keys/key1").toString(),
+                environment.getValue("/testdata/values/value1").toString());
+        mainPage.addCookieByKeyandName(environment.getValue("/testdata/keys/key2").toString(),
+                environment.getValue("/testdata/values/value2").toString());
+        mainPage.addCookieByKeyandName(environment.getValue("/testdata/keys/key3").toString(),
+                environment.getValue("/testdata/values/value3").toString());
+        mainPage.getAllCokies();
+        mainPage.deleteCookieByKey(environment.getValue("/testdata/keys/key1").toString());
+        Assert.assertTrue(mainPage.isDeletedCookie(environment.getValue("/testdata/keys/key1").toString()),
+                "Cookie was deleted");
+        mainPage.changeCookieValue(environment.getValue("/testdata/keys/key3").toString(),
+                environment.getValue("/testdata/values/newValue").toString());
+        mainPage.getAllCokies();
+        mainPage.deleteAllCookies();
+        Assert.assertTrue(mainPage.isCookiesEmpty(), "Cookie is empty");
+        mainPage.getAllCokies();
     }
 
     @AfterClass
     public static void tearDown() {
-        mainPage.driverDown();
+
     }
 }
