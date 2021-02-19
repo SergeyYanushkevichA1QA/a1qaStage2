@@ -1,29 +1,42 @@
 package by.a1qa.quest.task2;
 
+import aquality.selenium.browser.AqualityServices;
+import aquality.selenium.core.utilities.ISettingsFile;
+import aquality.selenium.core.utilities.JsonSettingsFile;
 import by.a1qa.entity.JDBCconnection;
-import by.a1qa.quest.task1.Task1;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import by.a1qa.models.Project;
+import by.a1qa.models.Projects;
+import by.a1qa.models.Test;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Task2 {
+    private static ISettingsFile environment = new JsonSettingsFile("settings.json");
 
-    private static final Logger LOGGER = LogManager.getLogger(Task2.class);
-
-    public static void runTask() throws SQLException {
+    public static List<Project> runAndReturnAnswer() throws SQLException {
         Connection conn = JDBCconnection.getConnection();
-        LOGGER.info("task 2 DB");
-        String ask = "SELECT DISTINCT project.name, COUNT(*) FROM project " +
-                "JOIN test ON project.id = test.project_id GROUP BY project.name";
         Statement stmt = conn.createStatement();
-        ResultSet rs = stmt.executeQuery(ask);
-        while(rs.next())
-        {
-            LOGGER.info(rs.getString("project.name") + " " + rs.getString("COUNT(*)"));
+        ResultSet rs = stmt.executeQuery(environment.getValue("/testdata/asksForDB/ask2").toString());
+        List<Project> projects = new ArrayList<>();
+        while (rs.next()) {
+            String name = rs.getString(1);
+            int count = rs.getInt(2);
+            Project project = new Project(name);
+            project.setTestCount(count);
+            projects.add(project);
+        }
+        conn.close();
+        return projects;
+    }
+
+    public static void logAnswer(List<Project> data) {
+        for(int i = 0; i < data.size(); i++) {
+            AqualityServices.getLogger().info(data.get(i).getName() + " " + data.get(i).getTestCount());
         }
     }
 }

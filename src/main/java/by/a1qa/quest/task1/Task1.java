@@ -1,29 +1,45 @@
 package by.a1qa.quest.task1;
 
+import aquality.selenium.browser.AqualityServices;
+import aquality.selenium.core.utilities.ISettingsFile;
+import aquality.selenium.core.utilities.JsonSettingsFile;
 import by.a1qa.entity.JDBCconnection;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import by.a1qa.models.Projects;
+import by.a1qa.models.Test;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Task1 {
+    private static ISettingsFile environment = new JsonSettingsFile("settings.json");
 
-    private static final Logger LOGGER = LogManager.getLogger(Task1.class);
-
-    public static void runTask() throws SQLException {
+    public static List<Test> runAndReturnAnswer() throws SQLException {
         Connection conn = JDBCconnection.getConnection();
-        LOGGER.info("task1 DB");
-        String ask = "SELECT project.name, test.name, (test.end_time - test.start_time) FROM project " +
-                "JOIN test ON project.id = test.project_id GROUP BY test.name ORDER by project.name ASC ";
         Statement stmt = conn.createStatement();
-        ResultSet rs = stmt.executeQuery(ask);
-        while(rs.next())
-        {
-            LOGGER.info(rs.getString("project.name") + " " + rs.getString("test.name") + " " +
-                    rs.getString("(test.end_time - test.start_time)"));
+        ResultSet rs = stmt.executeQuery(environment.getValue("/testdata/asksForDB/ask1").toString());
+        List<Test> tests = new ArrayList<>();
+        Projects projects = new Projects();
+        while (rs.next()) {
+            Test test = new Test();
+            String projectName = rs.getString(1);
+            String testName = rs.getString(2);
+            int time = rs.getInt(3);
+            test.setProject(projects.getProject(projectName));
+            test.setName(testName);
+            test.setMinTime(time);
+            tests.add(test);
+        }
+        conn.close();
+        return tests;
+    }
+
+    public static void logAnswer(List<Test> data) {
+        for(int i = 0; i < data.size(); i++) {
+            AqualityServices.getLogger().info(data.get(i).getProject() + " " + data.get(i).getName() + " " + data.get(i).getMinTime());
         }
     }
 }

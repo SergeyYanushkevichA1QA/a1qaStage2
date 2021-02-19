@@ -1,31 +1,42 @@
 package by.a1qa.quest.task3;
 
+import aquality.selenium.browser.AqualityServices;
+import aquality.selenium.core.utilities.ISettingsFile;
+import aquality.selenium.core.utilities.JsonSettingsFile;
 import by.a1qa.entity.JDBCconnection;
-import by.a1qa.quest.task1.Task1;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import by.a1qa.models.Projects;
+import by.a1qa.models.Test;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Task3 {
+    private static ISettingsFile environment = new JsonSettingsFile("settings.json");
 
-    private static final Logger LOGGER = LogManager.getLogger(Task3.class);
-
-    public static void runTask() throws SQLException {
+    public static List<Test> runAndReturnAnswer() throws SQLException {
         Connection conn = JDBCconnection.getConnection();
-        LOGGER.info("task 3 DB");
-        String ask = "SELECT project.name, test.name, test.start_time FROM project" +
-                " JOIN test ON project.id = test.project_id WHERE test.start_time >='2015-11-7' " +
-                "GROUP BY test.name ORDER by project.name ASC";
         Statement stmt = conn.createStatement();
-        ResultSet rs = stmt.executeQuery(ask);
-        while(rs.next())
-        {
-            LOGGER.info(rs.getString("project.name") + " " +rs.getString("test.name") + " " +
-                    rs.getString("test.start_time"));
+        ResultSet rs = stmt.executeQuery(environment.getValue("/testdata/asksForDB/ask3").toString());
+        List<Test> tests = new ArrayList<>();
+        Projects projects = new Projects();
+        while (rs.next()) {
+            Test test = new Test();
+            String projectName = rs.getString(1);
+            String testName = rs.getString(2);
+            String dateTime = rs.getString(3);
+            test.setProject(projects.getProject(projectName));
+            test.setName(testName);
+            test.setStartTime(dateTime);
+            tests.add(test);
+        }
+        conn.close();
+        return tests;
+    }
+
+    public static void logAnswer(List<Test> data) {
+        for(int i = 0; i < data.size(); i++) {
+            AqualityServices.getLogger().info(data.get(i).getProject() + " " + data.get(i).getName() + " " + data.get(i).getStartTime());
         }
     }
 }
