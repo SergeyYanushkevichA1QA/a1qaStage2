@@ -1,0 +1,49 @@
+2021-02-22 00:00:08 INFO  - Send request: https://jsonplaceholder.typicode.com/posts GET
+2021-02-22 00:00:08 INFO  - Checking status code
+2021-02-22 00:00:08 INFO  - Status code is 200
+2021-02-22 00:00:08 INFO  - Checking json
+2021-02-22 00:00:08 INFO  - Check if string is JSON
+2021-02-22 00:00:18 INFO  - Send request: https://jsonplaceholder.typicode.com/posts/99 GET
+2021-02-22 00:00:18 INFO  - Checking status code
+2021-02-22 00:00:18 INFO  - Status code is 200
+2021-02-22 00:00:18 INFO  - Read Post from JSON string
+2021-02-22 00:00:18 INFO  - Checking userId
+2021-02-22 00:00:18 INFO  - Checking id
+2021-02-22 00:00:18 INFO  - Checking checking title and body
+2021-02-22 00:00:24 INFO  - Send request: https://jsonplaceholder.typicode.com/posts/150 GET
+2021-02-22 00:00:24 INFO  - Checking status code
+2021-02-22 00:00:24 INFO  - Status code is 404
+2021-02-22 00:00:24 INFO  - Checking body of response
+2021-02-22 00:00:30 INFO  - Write Post to JSON string
+2021-02-22 00:00:30 INFO  - Send request: POST /posts
+2021-02-22 00:00:30 INFO  - Send request: https://jsonplaceholder.typicode.com/posts POST
+2021-02-22 00:00:31 INFO  - Checking status code
+2021-02-22 00:00:31 INFO  - Status code is 201
+2021-02-22 00:00:31 INFO  - Read Post from JSON string
+2021-02-22 00:00:31 INFO  - Check userId, title, body of post
+2021-02-22 00:00:36 INFO  - Send request: https://jsonplaceholder.typicode.com/users GET
+2021-02-22 00:00:37 INFO  - Checking status code
+2021-02-22 00:00:37 INFO  - Status code is 200
+2021-02-22 00:00:37 INFO  - Checking json
+2021-02-22 00:00:37 INFO  - Check if string is JSON
+2021-02-22 00:00:37 INFO  - Read User[] from JSON string
+2021-02-22 00:00:37 INFO  - Checking user id
+2021-02-22 00:00:37 INFO  - User id is 5
+2021-02-22 00:00:37 INFO  - Checking name
+2021-02-22 00:00:37 INFO  - Checking username
+2021-02-22 00:00:37 INFO  - Checking email
+2021-02-22 00:00:37 INFO  - Checking street
+2021-02-22 00:00:37 INFO  - Checking suite
+2021-02-22 00:00:37 INFO  - Checking city
+2021-02-22 00:00:37 INFO  - Checking zipcode
+2021-02-22 00:00:37 INFO  - Checking lat
+2021-02-22 00:00:37 INFO  - Checking lng
+2021-02-22 00:00:37 INFO  - Checking phone
+2021-02-22 00:00:37 INFO  - Checking website
+2021-02-22 00:00:37 INFO  - Checking company name
+2021-02-22 00:00:37 INFO  - Checking catchPhrase
+2021-02-22 00:00:37 INFO  - Checking bs
+2021-02-22 00:00:37 INFO  - Send request: https://jsonplaceholder.typicode.com/users/5 GET
+2021-02-22 00:00:37 INFO  - Checking status code
+2021-02-22 00:00:37 INFO  - Status code is 200
+2021-02-22 00:00:37 INFO  - Read User from JSON string
