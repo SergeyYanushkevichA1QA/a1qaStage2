@@ -5,7 +5,8 @@ import aquality.selenium.browser.Browser;
 import aquality.selenium.core.utilities.ISettingsFile;
 import aquality.selenium.core.utilities.JsonSettingsFile;
 import by.a1qa.entity.MainPage;
-import by.a1qa.service.getData;
+import by.a1qa.service.GetData;
+import by.a1qa.utils.AuthUtils;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -30,16 +31,15 @@ public class BasicAuthTest {
     @Test
     public void BasicAuthTest() throws IOException {
         Assert.assertEquals(mainPage.getCurrentUrl(), url);
-        mainPage.basicAuth();
-        getData.getUserAndAuth();
-        Assert.assertEquals(getData.getUsername(), environment.getValue("/testdata/username"));
-        Assert.assertTrue(getData.getIsAuth());
-
-       
+        browser.goTo(AuthUtils.getBasicAuthURL(url, environment.getValue("/testdata/username").toString(),
+                environment.getValue("/testdata/password").toString()));
+        GetData.getUserAndAuth(url);
+        Assert.assertEquals(GetData.getUsername(), environment.getValue("/testdata/username"));
+        Assert.assertTrue(GetData.getIsAuth());
     }
 
     @AfterClass
     public void tearDown() {
-      //  browser.quit();
+        browser.quit();
     }
 }
