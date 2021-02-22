@@ -1,0 +1,92 @@
+2021-01-28 21:03:30 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 21:03:30 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 21:03:55 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 21:03:55 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 21:03:55 INFO  - Browser 'CHROME' ready...
+2021-01-28 21:03:56 INFO  - Maximizing browser window
+2021-01-28 21:03:56 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/iframe'
+2021-01-28 21:04:00 INFO  - Waiting for page to load
+2021-01-28 21:04:01 INFO  - Getting current url
+2021-01-28 21:04:01 INFO  - Current url: [http://the-internet.herokuapp.com/iframe]
+2021-01-28 21:04:01 INFO  - Switching to frame
+2021-01-28 21:04:01 INFO  - Clear input in frame
+2021-01-28 21:04:01 INFO  - Text Field 'Input Field' :: Clearing
+2021-01-28 21:04:01 INFO  - Text Field 'Input Field' :: Typing ''
+2021-01-28 21:04:02 INFO  - Text Field 'Input Field' :: Sending keys 'jm2kdPa5YM6Hh5JpcDyrKnnnEfAszz'
+2021-01-28 21:04:02 INFO  - Text Field 'Input Field' :: Getting text from element
+2021-01-28 21:04:02 INFO  - Text Field 'Input Field' :: Element's text: [jm2kdPa5YM6Hh5JpcDyrKnnnEfAszz]
+2021-01-28 21:04:02 INFO  - Leaving frame
+2021-01-28 21:04:02 INFO  - Button 'highligh Text Button' :: Clicking
+2021-01-28 21:04:02 INFO  - Button 'Bold button' :: Clicking
+2021-01-28 21:06:33 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 21:06:33 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 21:06:36 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 21:06:36 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 21:06:36 INFO  - Browser 'CHROME' ready...
+2021-01-28 21:06:36 INFO  - Maximizing browser window
+2021-01-28 21:06:37 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/iframe'
+2021-01-28 21:06:43 INFO  - Waiting for page to load
+2021-01-28 21:06:43 INFO  - Getting current url
+2021-01-28 21:06:43 INFO  - Current url: [http://the-internet.herokuapp.com/iframe]
+2021-01-28 21:06:43 INFO  - Switching to frame
+2021-01-28 21:06:43 INFO  - Clear input in frame
+2021-01-28 21:06:43 INFO  - Text Field 'Input Field' :: Clearing
+2021-01-28 21:06:43 INFO  - Text Field 'Input Field' :: Typing ''
+2021-01-28 21:06:43 INFO  - Text Field 'Input Field' :: Typing 'GjimRvZ5CXr7pLNYkmNlF5IfBSlhsZ'
+2021-01-28 21:06:44 INFO  - Text Field 'Input Field' :: Getting text from element
+2021-01-28 21:06:44 INFO  - Text Field 'Input Field' :: Element's text: [GjimRvZ5CXr7pLNYkmNlF5IfBSlhsZ]
+2021-01-28 21:06:44 INFO  - Leaving frame
+2021-01-28 21:06:44 INFO  - Button 'highligh Text Button' :: Clicking
+2021-01-28 21:06:44 INFO  - Button 'Bold button' :: Clicking
+2021-01-28 21:08:59 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-01-28 21:08:59 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-01-28 21:09:02 DEBUG - Set '15' timeout in seconds for loading of pages
+2021-01-28 21:09:02 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-01-28 21:09:02 INFO  - Browser 'CHROME' ready...
+2021-01-28 21:09:02 INFO  - Maximizing browser window
+2021-01-28 21:09:03 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/iframe'
+2021-01-28 21:09:13 INFO  - Waiting for page to load
+2021-01-28 21:09:15 INFO  - Getting current url
+2021-01-28 21:09:15 INFO  - Current url: [http://the-internet.herokuapp.com/iframe]
+2021-01-28 21:09:15 INFO  - Switching to frame
+2021-01-28 21:09:15 INFO  - Clear input in frame
+2021-01-28 21:09:15 INFO  - Text Field 'Input Field' :: Clearing
+2021-01-28 21:09:15 INFO  - Text Field 'Input Field' :: Typing ''
+2021-01-28 21:09:15 INFO  - Text Field 'Input Field' :: Typing 'bWW6WvMUX7oRKK9M6JZF4COorgDmtF'
+2021-01-28 21:09:15 INFO  - Text Field 'Input Field' :: Getting text from element
+2021-01-28 21:09:15 INFO  - Text Field 'Input Field' :: Element's text: [bWW6WvMUX7oRKK9M6JZF4COorgDmtF]
+2021-01-28 21:09:15 INFO  - Leaving frame
+2021-01-28 21:09:15 INFO  - Button 'highligh Text Button' :: Clicking
+2021-01-28 21:09:16 INFO  - Button 'Bold button' :: Clicking
+2021-02-22 15:12:36 DEBUG - Got browser profile options from settings file: 
+{disable-popup-blocking=true, download.prompt_for_download=false, profile.default_content_settings.popups=0, intl.accept_languages=en, safebrowsing.enabled=true, download.default_directory=//home//selenium//downloads}
+2021-02-22 15:12:36 DEBUG - Got browser capabilities from settings file: 
+{enableVNC=true}
+2021-02-22 15:12:42 DEBUG - Set '60' timeout in seconds for loading of pages
+2021-02-22 15:12:42 DEBUG - Set async javascript execution timeout '10' in seconds
+2021-02-22 15:12:42 INFO  - Browser 'CHROME' ready...
+2021-02-22 15:12:42 INFO  - Maximizing browser window
+2021-02-22 15:12:43 INFO  - Navigate to url - 'http://the-internet.herokuapp.com/iframe'
+2021-02-22 15:12:56 INFO  - Waiting for page to load
+2021-02-22 15:12:57 INFO  - Checking browser url
+2021-02-22 15:12:57 INFO  - Getting current url
+2021-02-22 15:12:57 INFO  - Current url: [http://the-internet.herokuapp.com/iframe]
+2021-02-22 15:12:57 INFO  - Switching to frame
+2021-02-22 15:12:57 INFO  - Clear input in frame
+2021-02-22 15:12:57 INFO  - Text Field 'Input Field' :: Clearing
+2021-02-22 15:12:57 INFO  - Text Field 'Input Field' :: Typing ''
+2021-02-22 15:12:58 INFO  - Text Field 'Input Field' :: Typing 'SXcGoMxg5pZYofRQbRTYQvFb6SQDRi'
+2021-02-22 15:12:58 INFO  - Checking input text
+2021-02-22 15:12:58 INFO  - Text Field 'Input Field' :: Getting text from element
+2021-02-22 15:12:58 INFO  - Text Field 'Input Field' :: Element's text: [SXcGoMxg5pZYofRQbRTYQvFb6SQDRi]
+2021-02-22 15:12:58 INFO  - Leaving frame
+2021-02-22 15:12:58 INFO  - Button 'highligh Text Button' :: Clicking
+2021-02-22 15:12:58 INFO  - Button 'Bold button' :: Clicking
+2021-02-22 15:12:59 INFO  - Checking if text is bold
+2021-02-22 15:12:59 INFO  - Closing browser

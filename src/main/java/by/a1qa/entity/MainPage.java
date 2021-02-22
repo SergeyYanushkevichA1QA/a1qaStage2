@@ -2,15 +2,11 @@ package by.a1qa.entity;
 
 import aquality.selenium.browser.AqualityServices;
 import aquality.selenium.browser.Browser;
-import aquality.selenium.elements.ElementFactory;
 import aquality.selenium.elements.interfaces.IButton;
 import aquality.selenium.elements.interfaces.IElementFactory;
 import aquality.selenium.elements.interfaces.ITextBox;
-import by.a1qa.service.ConfProperties;
 import by.a1qa.service.StringGenerator;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 public class MainPage {
     public Browser browser;
@@ -23,9 +19,6 @@ public class MainPage {
 
 
     public MainPage(Browser browser) {
-        browser.maximize();
-        browser.goTo(ConfProperties.getProperty("mainpage"));
-        browser.waitForPageToLoad();
         this.browser = browser;
     }
 
@@ -78,7 +71,4 @@ public class MainPage {
         return flag;
     }
 
-    public void driverDown() {
-        browser.getDriver().quit();
-    }
 }
