@@ -1,21 +1,25 @@
 package by.a1qa.service;
 
 import aquality.selenium.browser.AqualityServices;
+import aquality.selenium.core.utilities.ISettingsFile;
+import aquality.selenium.core.utilities.JsonSettingsFile;
 import by.a1qa.models.Post;
+import by.a1qa.models.User;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.google.common.collect.Ordering;
+
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 
 public class Utils {
 
+    private static ISettingsFile environment = new JsonSettingsFile("settings.json");
 
     public static boolean isJson(String content) {
         AqualityServices.getLogger().info("Check if string is JSON");
@@ -47,5 +51,14 @@ public class Utils {
             AqualityServices.getLogger().error(e.getMessage());
         }
         return object;
+    }
+
+    public static User getUserN5() {
+        return Utils.readObjectFromJSON(environment.getValue("/testdata/testUser").toString(), User.class);
+    }
+
+    public static boolean isSortedById(List<Post> posts) {
+        int[] getSortedIdArr = posts.stream().mapToInt(Post::getId).sorted().toArray();
+        return IntStream.range(0, posts.size() - 1).noneMatch(i -> posts.get(i).getId() != getSortedIdArr[i]);
     }
 }

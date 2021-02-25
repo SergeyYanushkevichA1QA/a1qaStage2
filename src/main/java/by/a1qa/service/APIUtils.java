@@ -51,24 +51,25 @@ public class APIUtils {
         return response;
     }
 
-    public static PostsResponse getPosts(String path) {
-        return new PostsResponse(getResponse(getGetRequest(path)));
+    public static PostsResponse getPosts() {
+        return new PostsResponse(getResponse(getGetRequest(environment.getValue("/api/methods/get/posts").toString())));
     }
 
-    public static PostResponse getPost(String path) {
-        return new PostResponse(getResponse(getGetRequest(path)));
+    public static PostResponse getPost(int number) {
+
+        return new PostResponse(getResponse(getGetRequest(environment.getValue("/api/methods/get/posts").toString() + "/" + number)));
     }
 
     public static PostResponse setPost(Post post) {
-        return new PostResponse(getResponse(getPostRequest(environment.getValue("/testdata/methods/get/posts").toString(), Utils.toJSONString(post))));
+        return new PostResponse(getResponse(getPostRequest(environment.getValue("/api/methods/get/posts").toString(), Utils.toJSONString(post))));
     }
 
-    public static UsersResponse getUsers(String path) {
-        return new UsersResponse(getResponse(getGetRequest(path)));
+    public static UsersResponse getUsers() {
+        return new UsersResponse(getResponse(getGetRequest(environment.getValue("/api/methods/get/users").toString())));
     }
 
-    public static UserResponse getUser(String path) {
-        return new UserResponse(getResponse(getGetRequest(path)));
+    public static UserResponse getUser(int number) {
+        return new UserResponse(getResponse(getGetRequest(environment.getValue("/api/methods/get/users").toString() + "/" + number)));
     }
 
 

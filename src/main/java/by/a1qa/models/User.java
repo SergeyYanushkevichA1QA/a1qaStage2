@@ -3,7 +3,7 @@ package by.a1qa.models;
 import java.util.Objects;
 
 public class User {
-    private String id;
+    private int id;
     private String name;
     private String username;
     private String email;
@@ -12,11 +12,11 @@ public class User {
     private Address address;
     private Company company;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -76,4 +76,23 @@ public class User {
         this.company = company;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id == user.id &&
+                Objects.equals(name, user.name) &&
+                Objects.equals(username, user.username) &&
+                Objects.equals(email, user.email) &&
+                Objects.equals(phone, user.phone) &&
+                Objects.equals(website, user.website) &&
+                Objects.equals(address, user.address) &&
+                Objects.equals(company, user.company);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, username, email, phone, website, address, company);
+    }
 }

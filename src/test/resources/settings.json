@@ -73,45 +73,46 @@
   },
   "testdata": {
     "url": "https://jsonplaceholder.typicode.com",
-    "methods": {
-      "get": {
-        "posts": "/posts",
-        "postN99": "/posts/99",
-        "postN150": "/posts/150",
-        "users": "/users",
-        "userN5": "/users/5"
-      },
-      "post": {
-        "posts": "/posts"
-      }
-    },
     "testUser": {
-      "userId": "10",
-      "id": "99",
+      "id": 5,
       "name": "Chelsey Dietrich",
       "username": "Kamren",
       "email": "Lucio_Hettinger@annie.ca",
-      "street": "Skiles Walks",
-      "suite": "Suite 351",
-      "city": "Roscoeview",
-      "zipcode": "33263",
-      "lat": "-31.8129",
-      "lng": "62.5342",
+      "address": {
+        "street": "Skiles Walks",
+        "suite": "Suite 351",
+        "city": "Roscoeview",
+        "zipcode": "33263",
+        "geo": {
+          "lat": "-31.8129",
+          "lng": "62.5342"
+        }
+      },
       "phone": "(254)954-1289",
       "website": "demarco.info",
-      "companyname": "Keebler LLC",
-      "catchPhrase": "User-centric fault-tolerant solution",
-      "bs": "revolutionize end-to-end systems"
+      "company": {
+        "name": "Keebler LLC",
+        "catchPhrase": "User-centric fault-tolerant solution",
+        "bs": "revolutionize end-to-end systems"
+      }
     },
     "testPost": {
       "title": "AlexExample",
       "body": "example_body",
       "userId": "1",
       "id": "101"
-    },
-    "postN99data" : {
-      "id": 99,
-      "userId": 10
+    }
+  },
+  "api": {
+    "methods": {
+      "get": {
+        "posts": "/posts",
+        "users": "/users"
+      },
+      "post": {
+        "posts": "/posts"
+      }
     }
   }
+
 }

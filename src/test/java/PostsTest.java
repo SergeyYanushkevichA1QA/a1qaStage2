@@ -6,14 +6,10 @@ import by.a1qa.models.Post;
 import by.a1qa.models.User;
 import by.a1qa.service.APIUtils;
 import by.a1qa.service.Utils;
-import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
 import org.testng.Assert;
 
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 import java.util.List;
 
 
@@ -22,35 +18,38 @@ public class PostsTest {
 
     @Test
     public void getAllPosts(){
-        PostsResponse postsResponse = APIUtils.getPosts(environment.getValue("/testdata/methods/get/posts").toString());
+        PostsResponse postsResponse = APIUtils.getPosts();
         AqualityServices.getLogger().info("Checking status code");
         Assert.assertEquals(postsResponse.getStatusCode(), 200);
         AqualityServices.getLogger().info("Status code is " + postsResponse.getStatusCode());
         AqualityServices.getLogger().info("Checking json");
         Assert.assertTrue(postsResponse.isJSON());
+        AqualityServices.getLogger().info("Checking is sorted by id");
+        Assert.assertTrue(Utils.isSortedById(postsResponse.getObject()));
     }
-
-
 
     @Test
     public void getPostN99() {
-        PostResponse postResponse = APIUtils.getPost(environment.getValue("/testdata/methods/get/postN99").toString());
+        int userId = 10;
+        int id = 99;
+        PostResponse postResponse = APIUtils.getPost(id);
         AqualityServices.getLogger().info("Checking status code");
         Assert.assertEquals(postResponse.getStatusCode(), 200);
         AqualityServices.getLogger().info("Status code is " + postResponse.getStatusCode());
         Post post = postResponse.getObject();
         AqualityServices.getLogger().info("Checking userId");
-        Assert.assertEquals(post.getUserId(), environment.getValue("/testdata/postN99data/userId").toString());
+        Assert.assertEquals(post.getUserId(), userId);
         AqualityServices.getLogger().info("Checking id");
-        Assert.assertEquals(post.getId(), environment.getValue("/testdata/postN99data/id").toString());
-        AqualityServices.getLogger().info("Checking checking title and body");
+        Assert.assertEquals(post.getId(), id);
+        AqualityServices.getLogger().info("Checking if is title and body empty");
         Assert.assertFalse(post.getTitle().isEmpty(), "Title is empty");
         Assert.assertFalse(post.getBody().isEmpty(), "Body is empty");
     }
 
     @Test
     public void getPostN150() {
-        PostResponse postResponse = APIUtils.getPost(environment.getValue("/testdata/methods/get/postN150").toString());
+        int id = 150;
+        PostResponse postResponse = APIUtils.getPost(id);
         AqualityServices.getLogger().info("Checking status code");
         Assert.assertEquals(postResponse.getStatusCode(), 404);
         AqualityServices.getLogger().info("Status code is " + postResponse.getStatusCode());
@@ -61,7 +60,7 @@ public class PostsTest {
     @Test
     public void postUser() {
         Post newPost = new Post();
-        newPost.setUserId(environment.getValue("/testdata/testPost/userId").toString());
+        newPost.setUserId((Integer) environment.getValue("/testdata/testPost/userId"));
         newPost.setTitle(environment.getValue("/testdata/testPost/title").toString());
         newPost.setBody(environment.getValue("/testdata/testPost/body").toString());
         PostResponse postResponse = APIUtils.setPost(newPost);
@@ -77,51 +76,28 @@ public class PostsTest {
 
     @Test
     public void getAllUsersAndUserN5() {
-        UsersResponse usersResponse = APIUtils.getUsers(environment.getValue("/testdata/methods/get/users").toString());
+        int userN5forArr = 4;
+        UsersResponse usersResponse = APIUtils.getUsers();
         AqualityServices.getLogger().info("Checking status code");
         Assert.assertEquals(usersResponse.getStatusCode(), 200);
         AqualityServices.getLogger().info("Status code is " + usersResponse.getStatusCode());
         AqualityServices.getLogger().info("Checking json");
         Assert.assertTrue(usersResponse.isJSON());
         List<User> users = usersResponse.getObject();
-        User user = users.get(4);
+        User user = users.get(userN5forArr);
         AqualityServices.getLogger().info("Checking user id");
-        Assert.assertEquals(user.getId(), "5");
+        Assert.assertEquals(user.getId(), 5);
         AqualityServices.getLogger().info("User id is "+user.getId());
-        AqualityServices.getLogger().info("Checking name");
-        Assert.assertEquals(user.getName(), environment.getValue("/testdata/testUser/name").toString());
-        AqualityServices.getLogger().info("Checking username");
-        Assert.assertEquals(user.getUsername(), environment.getValue("/testdata/testUser/username").toString());
-        AqualityServices.getLogger().info("Checking email");
-        Assert.assertEquals(user.getEmail(), environment.getValue("/testdata/testUser/email").toString());
-        AqualityServices.getLogger().info("Checking street");
-        Assert.assertEquals(user.getAddress().getStreet(), environment.getValue("/testdata/testUser/street").toString());
-        AqualityServices.getLogger().info("Checking suite");
-        Assert.assertEquals(user.getAddress().getSuite(), environment.getValue("/testdata/testUser/suite").toString());
-        AqualityServices.getLogger().info("Checking city");
-        Assert.assertEquals(user.getAddress().getCity(), environment.getValue("/testdata/testUser/city").toString());
-        AqualityServices.getLogger().info("Checking zipcode");
-        Assert.assertEquals(user.getAddress().getZipcode(), environment.getValue("/testdata/testUser/zipcode").toString());
-        AqualityServices.getLogger().info("Checking lat");
-        Assert.assertEquals(user.getAddress().getGeo().getLat(), environment.getValue("/testdata/testUser/lat").toString());
-        AqualityServices.getLogger().info("Checking lng");
-        Assert.assertEquals(user.getAddress().getGeo().getLng(), environment.getValue("/testdata/testUser/lng").toString());
-        AqualityServices.getLogger().info("Checking phone");
-        Assert.assertEquals(user.getPhone(), environment.getValue("/testdata/testUser/phone").toString());
-        AqualityServices.getLogger().info("Checking website");
-        Assert.assertEquals(user.getWebsite(), environment.getValue("/testdata/testUser/website").toString());
-        AqualityServices.getLogger().info("Checking company name");
-        Assert.assertEquals(user.getCompany().getName(), environment.getValue("/testdata/testUser/companyname").toString());
-        AqualityServices.getLogger().info("Checking catchPhrase");
-        Assert.assertEquals(user.getCompany().getCatchPhrase(), environment.getValue("/testdata/testUser/catchPhrase").toString());
-        AqualityServices.getLogger().info("Checking bs");
-        Assert.assertEquals(user.getCompany().getBs(), environment.getValue("/testdata/testUser/bs").toString());
-        UserResponse userResponse = APIUtils.getUser(environment.getValue("/testdata/methods/get/userN5").toString());
+        User testUser = Utils.getUserN5();
+        AqualityServices.getLogger().info("Checking user data with test data");
+        Assert.assertEquals(user, testUser);
+        UserResponse userResponse = APIUtils.getUser(user.getId());
         AqualityServices.getLogger().info("Checking status code");
         Assert.assertEquals(usersResponse.getStatusCode(), 200);
         AqualityServices.getLogger().info("Status code is " + usersResponse.getStatusCode());
         User newUser = userResponse.getObject();
-        Assert.assertEquals(newUser, user);
+        AqualityServices.getLogger().info("Checking user data with user in response");
+        Assert.assertEquals(user, newUser);
     }
 
 }
