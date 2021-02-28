@@ -15,8 +15,8 @@ public class Utils {
 
     public static void autoUploadImage() {
         try {
-            Process process = Runtime.getRuntime().exec(environment.getValue("/testdata/pathForScript").toString()
-                    + " "  + environment.getValue("/testdata/pathForPic").toString());
+            Process process = Runtime.getRuntime().exec(environment.getValue("/pathForScript").toString()
+                    + " "  + environment.getValue("/pathForPic").toString());
             process.waitFor();
         } catch (IOException | InterruptedException e) {
             AqualityServices.getLogger().info("Couldn't click to open button to attach file using AutoIt script: " + e.toString());

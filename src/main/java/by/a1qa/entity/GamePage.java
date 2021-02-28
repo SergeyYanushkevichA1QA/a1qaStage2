@@ -13,8 +13,6 @@ import java.util.List;
 import java.util.Random;
 
 public class GamePage {
-    public Browser browser;
-
     private final CookiesForm cookiesForm = new CookiesForm();
     private final HelpForm helpForm = new HelpForm();
 
@@ -33,9 +31,6 @@ public class GamePage {
     private final ILink uploadImageLink = elementFactory.getLink(By.xpath("//a[@class='avatar-and-interests__upload-button']"), "Upload image");;
     private static By interestsLocator = By.xpath("//div[@class='avatar-and-interests__interests-list__item']//label");
 
-    public GamePage(Browser browser) {
-        this.browser = browser;
-    }
 
     public void setPassword(String text) {
         passwordTxtBox.clearAndType(text);
@@ -86,7 +81,7 @@ public class GamePage {
     }
 
     public String getURL() {
-        return browser.getCurrentUrl();
+        return AqualityServices.getBrowser().getCurrentUrl();
     }
 
     public void uploadImage() {

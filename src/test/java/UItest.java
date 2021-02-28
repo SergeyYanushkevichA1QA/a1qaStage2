@@ -15,18 +15,19 @@ public class UItest {
     public static GamePage gamePage;
     public static StartPage startPage;
     private final ISettingsFile environment = new JsonSettingsFile("settings.json");
-    private final String url = environment.getValue("/testdata/url").toString();
-    private final String gamepageURL = environment.getValue("/testdata/gamepageURL").toString();
+    private final ISettingsFile testdata = new JsonSettingsFile("testdata.json");
+    private final String url = environment.getValue("/url").toString();
+    private final String gamepageURL = environment.getValue("/gamepageURL").toString();
 
     @BeforeClass
     public void setup() {
         browser.maximize();
         browser.goTo(url);
         browser.waitForPageToLoad();
-        startPage = new StartPage(browser);
+        startPage = new StartPage();
         Assert.assertEquals(startPage.getURL(), url);
         startPage.clickStartButton();
-        gamePage = new GamePage(browser);
+        gamePage = new GamePage();
         Assert.assertEquals(gamePage.getURL(), gamepageURL);
     }
 
@@ -62,11 +63,11 @@ public class UItest {
     @Test
     public void TC4() {
         AqualityServices.getLogger().info("Checking timer");
-        Assert.assertEquals(gamePage.getTimerValue(), environment.getValue("/testdata/timer").toString());
+        Assert.assertEquals(gamePage.getTimerValue(), testdata.getValue("/testdata/timer").toString());
     }
 
     @AfterClass
-    public static void tearDown() {
-
+    public void tearDown() {
+        browser.quit();
     }
 }

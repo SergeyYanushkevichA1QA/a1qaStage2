@@ -3,7 +3,11 @@
   "isRemote": false,
   "remoteConnectionUrl": "http://localhost:4444/wd/hub",
   "isElementHighlightEnabled" : true,
-
+  "url": "https://userinyerface.com/game.html%20target=",
+  "gamepageURL": "https://userinyerface.com/game.html",
+  "pathForPic": "C:\\Userinyerface\\src\\test\\resources\\photo.PNG",
+  "pathForScript": "C:\\Userinyerface\\src\\test\\resources\\autoscipt.exe",
+  
   "driverSettings": {
     "chrome": {
       "webDriverVersion": "latest",
@@ -71,12 +75,5 @@
   },
   "elementCache": {
     "isEnabled": false
-  },
-  "testdata": {
-    "url": "https://userinyerface.com/game.html%20target=",
-    "timer": "00:00:00",
-    "gamepageURL": "https://userinyerface.com/game.html",
-    "pathForPic": "C:\\Userinyerface\\src\\test\\resources\\photo.PNG",
-    "pathForScript": "C:\\Userinyerface\\src\\test\\resources\\autoscipt.exe"
   }
 }
