@@ -1,7 +1,6 @@
 package by.a1qa.entity;
 
 import aquality.selenium.browser.AqualityServices;
-import aquality.selenium.browser.Browser;
 import aquality.selenium.elements.interfaces.IButton;
 import aquality.selenium.elements.interfaces.IElementFactory;
 import aquality.selenium.elements.interfaces.ITextBox;
@@ -9,7 +8,6 @@ import by.a1qa.service.StringGenerator;
 import org.openqa.selenium.By;
 
 public class MainPage {
-    public Browser browser;
     private static String randomString = StringGenerator.getAlphaNumericString();
     private static IElementFactory elementFactory = AqualityServices.getElementFactory();
     private IButton highlighTxtButton = elementFactory.getButton(By.xpath("//div[contains(@role, 'button') and contains(text(), 'p')]"), "highligh Text Button");
@@ -18,24 +16,21 @@ public class MainPage {
     private ITextBox inputField = elementFactory.getTextBox(By.xpath("//body[@id='tinymce']/p"), "Input Field");
 
 
-    public MainPage(Browser browser) {
-        this.browser = browser;
-    }
-
     private void switchToFrame() {
         AqualityServices.getLogger().info("Switching to frame");
-        browser.getDriver().switchTo().frame("mce_0_ifr");
+        AqualityServices.getBrowser().getDriver().switchTo().frame("mce_0_ifr");
     }
 
     private void leaveFrame() {
         AqualityServices.getLogger().info("Leaving frame");
-        browser.getDriver().switchTo().defaultContent();
+        AqualityServices.getBrowser().getDriver().switchTo().defaultContent();
     }
 
     public void clearInput() {
         switchToFrame();
         AqualityServices.getLogger().info("Clear input in frame");
         inputField.clearAndType("");
+        leaveFrame();
     }
 
     public void clickBoldButton() {
@@ -43,19 +38,19 @@ public class MainPage {
     }
 
     public void highlightText() {
-        leaveFrame();
         highlighTxtButton.click();
     }
     public void inputRandomText() {
+        switchToFrame();
         inputField.type(randomString);
+        leaveFrame();
     }
 
     public String getInputTxt() {
-        return inputField.getText();
-    }
-
-    public String getCurrentUrl() {
-        return browser.getCurrentUrl();
+        switchToFrame();
+        String text = inputField.getText();
+        leaveFrame();
+        return text;
     }
 
     public static String getRandomString() {
@@ -63,12 +58,7 @@ public class MainPage {
     }
 
     public boolean isBoldTxt() {
-        boolean flag = false;
-        if(boldButtonTxt.getElement().isDisplayed())
-        {
-            flag = true;
-        }
-        return flag;
+        return boldButtonTxt.getElement().isDisplayed();
     }
 
 }

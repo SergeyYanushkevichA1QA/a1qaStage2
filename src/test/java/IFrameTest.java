@@ -20,13 +20,13 @@ public class IFrameTest {
         browser.maximize();
         browser.goTo(url);
         browser.waitForPageToLoad();
-        mainPage = new MainPage(browser);
+        mainPage = new MainPage();
     }
 
     @Test
     public void iFrameTest() {
         AqualityServices.getLogger().info("Checking browser url");
-        Assert.assertEquals(mainPage.getCurrentUrl(), url);
+        Assert.assertEquals(browser.getCurrentUrl(), url);
         mainPage.clearInput();
         mainPage.inputRandomText();
         AqualityServices.getLogger().info("Checking input text");
@@ -34,7 +34,7 @@ public class IFrameTest {
         mainPage.highlightText();
         mainPage.clickBoldButton();
         AqualityServices.getLogger().info("Checking if text is bold");
-        Assert.assertEquals(mainPage.isBoldTxt(), true);
+        Assert.assertTrue(mainPage.isBoldTxt());
     }
 
     @AfterClass
