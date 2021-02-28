@@ -3,6 +3,7 @@
   "isRemote": false,
   "remoteConnectionUrl": "http://localhost:4444/wd/hub",
   "isElementHighlightEnabled" : true,
+  "url": "http://the-internet.herokuapp.com/javascript_alerts",
 
   "driverSettings": {
     "chrome": {
@@ -71,15 +72,5 @@
   },
   "elementCache": {
     "isEnabled": false
-  },
-  "testdata": {
-    "url": "http://the-internet.herokuapp.com/javascript_alerts",
-    "alertsText": {
-      "jsAlertText": "I am a JS Alert",
-      "jsAlertResultText": "You successfuly clicked an alert",
-      "jsConfirmText": "I am a JS Confirm",
-      "jsConfirmResultText": "You clicked: Ok",
-      "jsPromptText": "I am a JS prompt"
-    }
   }
 }
