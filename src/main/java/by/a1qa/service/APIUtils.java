@@ -17,9 +17,11 @@ import java.net.http.HttpResponse;
 
 public class APIUtils {
     private static ISettingsFile environment = new JsonSettingsFile("settings.json");
-    private static String url = environment.getValue("/testdata/url").toString();
+    private static String url = environment.getValue("/url").toString();
     private static final String headerName = "content-type";
     private static final String headerValue = "application/json";
+    private static final String postsPath = "/posts";
+    private static final String usersPath = "/users";
 
 
     public static HttpRequest getPostRequest(String path, String json) {
@@ -52,24 +54,24 @@ public class APIUtils {
     }
 
     public static PostsResponse getPosts() {
-        return new PostsResponse(getResponse(getGetRequest(environment.getValue("/api/methods/get/posts").toString())));
+        return new PostsResponse(getResponse(getGetRequest(postsPath)));
     }
 
     public static PostResponse getPost(int number) {
 
-        return new PostResponse(getResponse(getGetRequest(environment.getValue("/api/methods/get/posts").toString() + "/" + number)));
+        return new PostResponse(getResponse(getGetRequest(postsPath + "/" + number)));
     }
 
     public static PostResponse setPost(Post post) {
-        return new PostResponse(getResponse(getPostRequest(environment.getValue("/api/methods/get/posts").toString(), Utils.toJSONString(post))));
+        return new PostResponse(getResponse(getPostRequest(postsPath, Utils.toJSONString(post))));
     }
 
     public static UsersResponse getUsers() {
-        return new UsersResponse(getResponse(getGetRequest(environment.getValue("/api/methods/get/users").toString())));
+        return new UsersResponse(getResponse(getGetRequest(usersPath)));
     }
 
     public static UserResponse getUser(int number) {
-        return new UserResponse(getResponse(getGetRequest(environment.getValue("/api/methods/get/users").toString() + "/" + number)));
+        return new UserResponse(getResponse(getGetRequest(usersPath + "/" + number)));
     }
 
 

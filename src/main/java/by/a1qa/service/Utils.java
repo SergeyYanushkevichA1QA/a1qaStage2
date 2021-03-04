@@ -7,19 +7,16 @@ import by.a1qa.models.Post;
 import by.a1qa.models.User;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.common.collect.Ordering;
 
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 
 public class Utils {
 
-    private static ISettingsFile environment = new JsonSettingsFile("settings.json");
+    private static ISettingsFile testdata = new JsonSettingsFile("testdata.json");
 
     public static boolean isJson(String content) {
         AqualityServices.getLogger().info("Check if string is JSON");
@@ -54,7 +51,7 @@ public class Utils {
     }
 
     public static User getUserN5() {
-        return Utils.readObjectFromJSON(environment.getValue("/testdata/testUser").toString(), User.class);
+        return Utils.readObjectFromJSON(testdata.getValue("/testdata/testUser").toString(), User.class);
     }
 
     public static boolean isSortedById(List<Post> posts) {
