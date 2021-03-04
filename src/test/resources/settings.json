@@ -5,9 +5,9 @@
   "isElementHighlightEnabled" : true,
   "url": "https://userinyerface.com/game.html%20target=",
   "gamepageURL": "https://userinyerface.com/game.html",
-  "pathForPic": "C:\\Userinyerface\\src\\test\\resources\\photo.PNG",
+  "pathForPic": "C:\\Userinyerface\\src\\test\\resources\\arrowBg.png",
   "pathForScript": "C:\\Userinyerface\\src\\test\\resources\\autoscipt.exe",
-  
+
   "driverSettings": {
     "chrome": {
       "webDriverVersion": "latest",

@@ -25,24 +25,27 @@ public class UItest {
         browser.goTo(url);
         browser.waitForPageToLoad();
         startPage = new StartPage();
-        Assert.assertEquals(startPage.getURL(), url);
+        Assert.assertTrue(startPage.isPage());
         startPage.clickStartButton();
         gamePage = new GamePage();
-        Assert.assertEquals(gamePage.getURL(), gamepageURL);
+        Assert.assertTrue(gamePage.isPage());
     }
 
     @Test
     public void TC1() {
-        gamePage.setPassword(StringGenerator.getAlphaNumericString());
-        gamePage.setEmail(gamePage.getPassword().charAt(0) + StringGenerator.getAlphaNumericString());
-        gamePage.setDomain(StringGenerator.getAlphaNumericString());
-        gamePage.selectRandomDropDownDomain();
-        gamePage.acceptTermsAndConditions();
-        gamePage.clickNextButton();
-        gamePage.checkThreeInterests();
-        gamePage.uploadImage();
-        gamePage.clickNextButtonAt3rd();
-        Assert.assertTrue(gamePage.checkThirdCard());
+        gamePage.getLoginForm().setPassword(StringGenerator.getAlphaNumericString());
+        gamePage.getLoginForm().setEmail(gamePage.getLoginForm().getPassword().charAt(0) + StringGenerator.getAlphaNumericString());
+        gamePage.getLoginForm().setDomain(StringGenerator.getAlphaNumericString());
+        gamePage.getLoginForm().selectRandomDropDownDomain();
+        gamePage.getLoginForm().acceptTermsAndConditions();
+        gamePage.getLoginForm().clickNextButton();
+        int numberOfInterests = 3;
+        gamePage.getProfileForm().checkInterests(numberOfInterests);
+        gamePage.getProfileForm().uploadImage();
+        gamePage.getProfileForm().clickNextButton();
+        int pageNumber = 3;
+        System.out.println(gamePage.getCurrentPageNumber());
+        Assert.assertEquals(gamePage.getCurrentPageNumber(), pageNumber);
     }
 
     @Test
