@@ -21,8 +21,4 @@ public class Utils {
         return node;
     }
 
-    public static String getParametersString(Map<String, String> params) {
-        Set<String> values = params.entrySet().stream().map(o -> o.getKey() + "=" + o.getValue()).collect(Collectors.toSet());
-        return String.join("&", values);
-    }
 }

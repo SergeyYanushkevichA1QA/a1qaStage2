@@ -8,16 +8,12 @@ import by.a1qa.models.Response;
 
 import org.apache.http.entity.mime.MultipartEntityBuilder;;
 import org.apache.http.HttpEntity;
-import org.apache.http.*;
 import org.apache.http.client.entity.EntityBuilder;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ContentType;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
-import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
-import org.json.JSONObject;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,12 +22,23 @@ import java.util.Map;
 
 public class VkApiUtils {
     private static ISettingsFile environment = new JsonSettingsFile("settings.json");
-    private static final String urlMethod = "https://api.vk.com/method/";
+    private static ISettingsFile testdata = new JsonSettingsFile("testdata.json");
+    private static final String urlMethod = environment.getValue("/urlMethod").toString();
+    private static final String version = "5.126";
+    private static final String access_token = "0f523d9cbcbf64e369cbb526b0fad532c8b4b94658384fff9e6119760ac978a6d00a9a2a56940f3f4619c";
+    private static final String wall_post = "wall.post?";
+    private static final String wall_edit = "wall.edit?";
+    private static final String wall_addComment = "wall.createComment?";
+    private static final String wall_delete = "wall.delete?";
+    private static final String photo_getWallUploadUrl = "photos.getWallUploadServer?";
+    private static final String photo_saveWallPhoto = "photos.saveWallPhoto?";
+    private static final String likes_isLiked = "likes.isLiked?";
+
 
     private static final Map<String, String> commonParams = new HashMap<String, String>() {
         {
-            put("v", (String) environment.getValue("/testdata/ver"));
-            put("access_token", (String) environment.getValue("/testdata/access_token"));
+            put("v", version);
+            put("access_token", access_token);
         }
     };
 
@@ -39,20 +46,20 @@ public class VkApiUtils {
         return new HashMap<>(commonParams);
     }
 
-    public String wallPost(String message) throws IOException {
+    public int wallPost(String message) throws IOException {
         Map<String, String> params = getCommonParams();
         params.put("message", message);
-        String body = execute((String) environment.getValue("/testdata/apiMethods/wall/post"), params);
-        return Utils.getObjectNode(body).get("response").get("post_id").asText();
+        String body = execute(wall_post, params);
+        return Utils.getObjectNode(body).get("response").get("post_id").asInt();
     }
 
-    public void wallEdit(String postId, String message, File image) throws IOException {
+    public void wallEdit(int postId, String message, File image) throws IOException {
         String photoName = saveWallPhoto(image);
         Map<String, String> params = getCommonParams();
-        params.put("post_id", postId);
+        params.put("post_id", String.valueOf(postId));
         params.put("message", message);
         params.put("attachments", photoName);
-        execute((String) environment.getValue("/testdata/apiMethods/wall/edit"), params);
+        execute(wall_edit, params);
     }
 
     private static String execute(HttpPost httpPost) throws IOException {
@@ -63,7 +70,7 @@ public class VkApiUtils {
     }
 
     protected static String execute(String method, Map<String, String> params) throws IOException {
-        String parametersString = Utils.getParametersString(params);
+        String parametersString = StringUtils.getParametersString(params);
         HttpEntity entity = EntityBuilder.create()
                 .setContentType(ContentType.APPLICATION_FORM_URLENCODED)
                 .setText(parametersString)
@@ -79,8 +86,8 @@ public class VkApiUtils {
 
     private static String getPhotoWallUploadUrl() throws IOException {
         Map<String, String> params = getCommonParams();
-        params.put("user_id", (String) environment.getValue("/testdata/userId"));
-        String responseBody = execute((String) environment.getValue("/testdata/apiMethods/photo/getWallUploadUrl"), params);
+        params.put("user_id", testdata.getValue("/id").toString());
+        String responseBody = execute(photo_getWallUploadUrl, params);
         return Utils.getObjectNode(responseBody).get("response").get("upload_url").asText();
     }
 
@@ -93,38 +100,38 @@ public class VkApiUtils {
         String photo = Utils.getObjectNode(responseBody).get("photo").asText();
         String hash = Utils.getObjectNode(responseBody).get("hash").asText();
         Map<String, String> params = getCommonParams();
-        params.put("user_id", (String) environment.getValue("/testdata/userId"));
+        params.put("user_id", testdata.getValue("/id").toString());
         params.put("photo", photo);
         params.put("server", server);
         params.put("hash", hash);
-        responseBody = execute((String) environment.getValue("/testdata/apiMethods/photo/saveWallPhoto"), params);
+        responseBody = execute(photo_saveWallPhoto, params);
         String photoId = Utils.getObjectNode(responseBody).get("response").get(0).get("id").asText();
         String ownerId = Utils.getObjectNode(responseBody).get("response").get(0).get("owner_id").asText();
         return "photo" + ownerId + "_" + photoId;
     }
 
-    public static void createReply(String postId, String message) throws IOException {
+    public static void createReply(int postId, String message) throws IOException {
         Map<String, String> params = getCommonParams();
-        params.put("post_id", postId);
+        params.put("post_id", String.valueOf(postId));
         params.put("message", message);
-        execute((String) environment.getValue("/testdata/apiMethods/wall/addcomment"), params);
+        execute(wall_addComment, params);
     }
 
-    private static Response getIsLiked(String postId) throws IOException {
+    private static Response getIsLiked(int postId) throws IOException {
         Map<String, String> params = getCommonParams();
         params.put("type", "post");
-        params.put("item_id", postId);
-        return getResponse((String) environment.getValue("/testdata/apiMethods/likes/isLiked"), params);
+        params.put("item_id", String.valueOf(postId));
+        return getResponse(likes_isLiked, params);
     }
 
-    public boolean isLiked(String postId) throws IOException {
+    public boolean isLiked(int postId) throws IOException {
         Response response = getIsLiked(postId);
         return response.getIntValue("liked") == 1;
     }
 
-    public void deletePost(String postId) throws IOException {
+    public void deletePost(int postId) throws IOException {
         Map<String, String> params = getCommonParams();
-        params.put("post_id", postId);
-        execute((String) environment.getValue("/testdata/apiMethods/wall/delete"), params);
+        params.put("post_id", String.valueOf(postId));
+        execute(wall_delete, params);
     }
 }

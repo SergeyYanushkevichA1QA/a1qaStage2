@@ -3,6 +3,9 @@
   "isRemote": false,
   "remoteConnectionUrl": "http://localhost:4444/wd/hub",
   "isElementHighlightEnabled" : true,
+  "url": "https://vk.com/",
+  "urlMethod": "https://api.vk.com/method/",
+  "imgSim": 99.0,
 
   "driverSettings": {
     "chrome": {
@@ -72,32 +75,9 @@
   "elementCache": {
     "isEnabled": false
   },
-  "testdata": {
-    "url": "https://vk.com/",
-    "login": "+375291660762",
-    "password": "PuV6j_.2&$m9h?UYY",
-    "userId": "627657327",
-    "ver": "5.126",
-    "access_token": "0f523d9cbcbf64e369cbb526b0fad532c8b4b94658384fff9e6119760ac978a6d00a9a2a56940f3f4619c",
-    "pathForPic": "src/main/resources/jpgforpost.jpg",
-    "apiURL": "https://api.vk.com/method/",
-    "apiMethods": {
-      "wall": {
-        "post": "wall.post?",
-        "edit": "wall.edit?",
-        "addcomment": "wall.createComment?",
-        "delete": "wall.delete?"
-      },
-      "photo": {
-        "getWallUploadUrl": "photos.getWallUploadServer?",
-        "saveWallPhoto": "photos.saveWallPhoto?"
 
-      },
-      "likes": {
-        "isLiked": "likes.isLiked?"
-      }
-
-    }
+  "path": {
+    "pic": "src/main/resources/jpgforpost.jpg"
   }
 
 }

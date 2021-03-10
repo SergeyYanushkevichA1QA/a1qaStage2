@@ -1,6 +1,8 @@
 package by.a1qa.service;
 
 import aquality.selenium.browser.AqualityServices;
+import aquality.selenium.core.utilities.ISettingsFile;
+import aquality.selenium.core.utilities.JsonSettingsFile;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -9,8 +11,9 @@ import java.io.IOException;
 import java.net.URL;
 
 public class ImageUtils {
+    private static ISettingsFile environment = new JsonSettingsFile("settings.json");
 
-    private static final double minSimilarityPercent = 99.0;
+    private static final double minSimilarityPercent = (double) environment.getValue("/imgSim");
 
     public static BufferedImage getImage(File file) {
         BufferedImage image = null;

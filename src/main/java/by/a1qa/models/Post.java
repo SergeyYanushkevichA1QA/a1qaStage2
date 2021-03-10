@@ -4,43 +4,46 @@ import java.awt.image.BufferedImage;
 import java.net.URI;
 
 public class Post {
-    private static String id;
-    private static String message;
-    private static String authorHref;
-    private static BufferedImage photo;
-    private static String photo_id;
+    private String id;
+    private String message;
+    private String authorHref;
+    private BufferedImage photo;
 
     public String getAuthorHrefPath() {
         return URI.create(getAuthorHref()).getPath();
     }
 
-    public static String getId() {
+    public String getId() {
         return id;
     }
 
-    public static void setId(String id) {
-        Post.id = id;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public static String getMessage() {
+    public String getMessage() {
         return message;
     }
 
-    public static String setMessage(String message) {
-        Post.message = message;
+    public String setMessage(String message) {
+        this.message = message;
         return message;
     }
 
-    public static String getAuthorHref() {
+    public String getAuthorHref() {
         return authorHref;
     }
 
-    public static BufferedImage getPhoto() {
+    public BufferedImage getPhoto() {
         return photo;
     }
 
-    public static void setPhoto(BufferedImage photo) {
-        Post.photo = photo;
+    public void setPhoto(BufferedImage photo) {
+        this.photo = photo;
+    }
+
+    public void setAuthorHref(String authorHref) {
+        this.authorHref = authorHref;
     }
 
 }
