@@ -1,6 +1,5 @@
 {
   "testdata": {
-    "url": "https://jsonplaceholder.typicode.com",
     "testUser": {
       "id": 5,
       "name": "Chelsey Dietrich",
@@ -27,8 +26,8 @@
     "testPost": {
       "title": "AlexExample",
       "body": "example_body",
-      "userId": "1",
-      "id": "101"
+      "userId": 1,
+      "id": 101
     }
   }
 }

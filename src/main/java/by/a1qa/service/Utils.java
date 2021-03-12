@@ -50,7 +50,7 @@ public class Utils {
         return object;
     }
 
-    public static User getUserN5() {
+    public static User getTestUser() {
         return Utils.readObjectFromJSON(testdata.getValue("/testdata/testUser").toString(), User.class);
     }
 
