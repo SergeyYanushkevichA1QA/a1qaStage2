@@ -6,28 +6,22 @@ import aquality.selenium.browser.Browser;
 import aquality.selenium.elements.interfaces.IButton;
 import aquality.selenium.elements.interfaces.IElementFactory;
 import aquality.selenium.elements.interfaces.ITextBox;
-import by.a1qa.service.ConfProperties;
+import aquality.selenium.forms.Form;
 import by.a1qa.service.StringGenerator;
 import org.openqa.selenium.By;
 
 
-public class MainPage {
-    public Browser browser;
-    private static String randomString = StringGenerator.getAlphaNumericString();
+public class MainPage extends Form {
     private static IElementFactory elementFactory = AqualityServices.getElementFactory();
-    private IButton jsAllertButton = elementFactory.getButton(By.xpath("//button[@onclick='jsAlert()']"), "JS alert button");
-    private IButton jsConfirmButton = elementFactory.getButton(By.xpath("//button[@onclick='jsConfirm()']"), "JS confirm button");
-    private IButton jsPromptButton = elementFactory.getButton(By.xpath("//button[@onclick='jsPrompt()']"), "JS prompt button");
-    private ITextBox resultText = elementFactory.getTextBox(By.xpath("//p[@id='result']"), ConfProperties.getProperty("jsAlertResultText"));
+    private static final String btnLocator = "//button[@onclick='%s()']";
+    private IButton jsAllertButton = getJsButton("jsAlert", "Alert");
+    private IButton jsConfirmButton = getJsButton("jsConfirm", "Confirm");
+    private IButton jsPromptButton = getJsButton("jsPrompt", "Prompt");
+    private ITextBox resultText = elementFactory.getTextBox(By.xpath("//p[@id='result']"), "Result Text");
 
-    public MainPage(Browser browser) {
-        browser.maximize();
-        browser.goTo(ConfProperties.getProperty("mainpage"));
-        browser.waitForPageToLoad();
-        this.browser = browser;
+    public MainPage() {
+        super(By.id("content"), "Main");
     }
-
-
 
     public void clickJsAlertButton() {
         jsAllertButton.click();
@@ -42,26 +36,24 @@ public class MainPage {
     }
 
     public void AcceptAlert() {
-        browser.handleAlert(AlertActions.ACCEPT);
+        AqualityServices.getBrowser().handleAlert(AlertActions.ACCEPT);
     }
 
     public String getAlertText() {
-        return browser.getDriver().switchTo().alert().getText();
+        return AqualityServices.getBrowser().getDriver().switchTo().alert().getText();
     }
 
     public String getResultText() {
         return resultText.getText();
     }
 
-    public void typeRandomTextInPrompt() {
-        browser.getDriver().switchTo().alert().sendKeys(randomString);
+    public void typeRandomTextInPrompt(String randomString) {
+        AqualityServices.getBrowser().getDriver().switchTo().alert().sendKeys(randomString);
     }
 
-    public String getRandomText() {
-        return randomString;
+
+    private IButton getJsButton(String locatorName, String name) {
+        return elementFactory.getButton(By.xpath(String.format(btnLocator, locatorName)), name);
     }
 
-    public void driverDown() {
-        browser.getDriver().quit();
-    }
 }
